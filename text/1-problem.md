@@ -8,6 +8,7 @@ Projects will require integrative use of business knowledge.
 
 The Project Proposal should include:
 
+
 * **Description of the Problem** Evidence in support of this being an actual problem and / or market opportunity. Establish viability and importance of why the business problem deserves attention
 * Proposed Solution
 * Value Proposition
