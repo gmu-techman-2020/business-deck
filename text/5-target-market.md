@@ -18,6 +18,5 @@ The Project Proposal should include:
 * Preliminary Financial Justification
 * **Mentors / Sponsors / Partners** The proposal must identify (and if possible, secure commitment) from project mentors, sponsors/ partners.   These can include individual(s) or groups within a relevant firm or organization who would be valuable participants in the development of the capstone project.
 
-Size of Deliverable
 
-Approximately 10 pages.  This does not include Appendices (supporting documents and detail) and references.   Use the outline above for the capstone proposal.
+![Test Python Output](images/test-foo.png)
