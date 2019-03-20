@@ -315,9 +315,10 @@ $endfor$
 \fancypagestyle{plain}{%
   \fancyhf{}%
   \fancyfoot[RO, LE] {\sffamily\thepage}
+  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
   $if(footer-text)$
     \fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{$footer-text$}}
-    \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+
     \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
   $endif$
 }
@@ -336,11 +337,19 @@ $endfor$
 \newcommand{\currpage}{\footnotesize\thepage} % use in headers
 \fancyhead{} % clear header fields, required
 \fancyfoot{} % clear footer fields, required
+\renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+$if(show-header)$
+\renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
 \fancyhead[LE]{ \footnotesize\sffamily\MakeUppercase{$title$: $subtitle$}  } % Odd Page, Right side
 \fancyhead[RO]{ \footnotesize\sffamily\MakeUppercase{\leftmark{}\rightmark}  } % Odd Page, Right side
-\fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{Confidential. All rights reserved.}}
+$endif$
+
 \fancyfoot[RO, LE] {\sffamily\thepage}
+$if(footer-text)$
+\fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{$footer-text$}}
 \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+$endif$
+
 % \renewcommand\headrulewidth{0pt} % for no rule line under header
 
 \titleformat

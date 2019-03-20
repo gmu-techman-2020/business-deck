@@ -1,4 +1,4 @@
-## Requirements
+## Market Research 
 
 The proposal should involve a problem / opportunity in the form of development or application of IT / technology in general.  It should be a novel or innovative application of a technology or integration of technologies.
 
