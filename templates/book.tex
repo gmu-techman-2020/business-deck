@@ -314,11 +314,12 @@ $endfor$
 
 \fancypagestyle{plain}{%
   \fancyhf{}%
-  % \fancyfoot[C]{\sffamily\thepage\ of \pageref{LastPage}}%
-  \fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{Confidential. All rights reserved.}}
   \fancyfoot[RO, LE] {\sffamily\thepage}
-  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-  \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+  $if(footer-text)$
+    \fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{$footer-text$}}
+    \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+    \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+  $endif$
 }
 
 
@@ -502,7 +503,7 @@ $endif$
 %     \end{abstract}
 %   $endif$
 % $endif$
-
+$if(frontmatter)$
 % ===============================================
 % Frontmatter
   \pagenumbering{roman}
@@ -617,7 +618,7 @@ $endif$
     $thanks$
     \newpage
   $endif$
-
+$endif$
   % -----------------------------------------------
   % Table of Contents
   $if(toc)$
