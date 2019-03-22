@@ -4,7 +4,7 @@ sansfont: Open Sans
 monofont: Permanent Marker
 seriffont: Libre Caslon Text
 linestretch: 1.3
-fontsize: 11pt
+fontsize: 9pt
 # website: "https://merovex.com"
 # imprint: "images/logo.png"
 toc: true

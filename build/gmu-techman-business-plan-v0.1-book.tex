@@ -1,0 +1,1629 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[9pt,]{book}
+\usepackage{multicol}
+\setlength\columnsep{18pt}
+\usepackage{titlesec}
+\usepackage{graphicx}
+% \usepackage{lipsum}
+\usepackage[all]{nowidow}
+\usepackage[none]{hyphenat}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+  \setmainfont{Libre Caslon Text}
+  \setsansfont{Open Sans}
+  \setmonofont{Permanent Marker}
+
+\usepackage{setspace}
+\setstretch{1.3}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Digital Librarian},
+            pdfauthor={Team Dewey},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\newcommand{\AFourSize}{paperwidth=210mm,paperheight=297mm,margin=2cm,twoside}
+\newcommand{\Letter}{paperwidth=8.5in,paperheight=11in,left=1.25in,right=.8in,top=1.0in,bottom=1.0in,twoside}
+\newcommand{\LetterS}{paperwidth=8.5in,paperheight=11in,left=1.0in,right=2in,top=1.0in,bottom=1.0in,twoside}
+\newcommand{\USTrade}{paperwidth=6in,paperheight=9in,left=0.875in,right=0.625in,top=0.525in,bottom=0.525in,twoside}
+\newcommand{\Digest}{paperwidth=5.5in,paperheight=8.5in,left=0.875in,right=0.625in,top=0.825in,bottom=0.825in,twoside}
+\newcommand{\USSmallTrade}{paperwidth=5.25in,paperheight=8in,left=0.875in,right=0.625in,top=0.825in,bottom=0.825in,twoside}
+\newcommand{\Novella}{paperwidth=5in,paperheight=8in,left=0.775in,right=0.525in,top=0.825in,bottom=0.725in,twoside}
+\newcommand{\MassMarket}{paperwidth=4.25in,paperheight=7in,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
+\newcommand{\UKAFormat}{paperwidth=111mm,paperheight=178mm,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
+\newcommand{\UKBFormat}{paperwidth=129mm,paperheight=198mm,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
+\usepackage[\Letter]{geometry}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Make links footnotes instead of hotlinks:
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\newcommand{\hideFromPandoc}[1]{#1}
+ \let\Begin\begin \let\End\end
+\usepackage{xcolor}
+\usepackage{spreadtab}
+\definecolor{red}{cmyk}{0.0, 0.56, 0.43, 0.58}
+\definecolor{blue}{cmyk}{0.56, 0.21, 0, 0.58}
+\definecolor{yellow}{cmyk}{0, 0.0, 0.56, 0.58}
+\definecolor{orange}{cmyk}{0, 0.34, 0.56, 0.58}
+\usepackage{lipsum}
+\setmonofont{Permanent Marker}
+% HEADER DESIGN
+\usepackage{fancyhdr} % headers
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  % \fancyfoot[C]{\sffamily\thepage\ of \pageref{LastPage}}%
+  \fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{Confidential. All rights reserved.}}
+  \fancyfoot[RO, LE] {\sffamily\thepage}
+  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+  \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+}
+
+
+\pagestyle{fancy} % style for headers
+\usepackage{pifont} % for the copyright symbol
+\headheight 0.25in % height of header
+\headsep 0.25in % dist between top of text and bottom of header
+\parskip 0in
+\parindent 0.25in % = 6.35mm
+\newcommand{\str}{\rule{0pt}{16pt}} % strut used in toc
+%%% header stuff
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{: #1}{}}
+\newcommand{\currpage}{\footnotesize\thepage} % use in headers
+\fancyhead{} % clear header fields, required
+\fancyfoot{} % clear footer fields, required
+\fancyhead[LE]{ \footnotesize\sffamily\MakeUppercase{Digital Librarian: GMU TechMan 2020 Business Plan}  } % Odd Page, Right side
+\fancyhead[RO]{ \footnotesize\sffamily\MakeUppercase{\leftmark{}\rightmark}  } % Odd Page, Right side
+\fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{Confidential. All rights reserved.}}
+\fancyfoot[RO, LE] {\sffamily\thepage}
+\renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
+% \renewcommand\headrulewidth{0pt} % for no rule line under header
+
+\titleformat
+{\chapter} % command
+[display] % shape
+{\ttfamily\Huge\color{blue}} % format
+{} % label
+{0.5ex} % sep
+{
+    \centering
+} % before-code
+[
+% \vspace{-0.5ex}%
+% \rule{\textwidth}{0.3pt}
+] % after-code
+
+
+\titleformat{\section}[display]
+{\sffamily\bfseries\Large\color{red}}
+{\thesection.}{0.5em}{\nopagebreak[4]}
+
+
+% ===============================================
+% Bringing PlainFancyBreak from Memoir class.
+\makeatletter
+\newcommand{\plainfancybreak}{\@ifstar{\@spfbreak}{\@pfbreak}}
+\newcommand{\@pfbreak}[3]{\par
+  \@tempdimc\pagegoal \advance\@tempdimc-\pagetotal
+  \ifdim #1>\@tempdimc \@fbreak{#3}\else \@pbreak{#2}\fi}
+\newcommand{\@spfbreak}[3]{\par
+  \@tempdimc\pagegoal \advance\@tempdimc-\pagetotal
+  \ifdim #1>\@tempdimc \@sfbreak{#3}\else \@spbreak{#2}\fi}
+
+\newcommand*{\pen@ltyabovepfbreak}{2}
+\newcommand*{\pen@ltybelowpfbreak}{-4}
+
+\newlength{\pfbreakskip}
+  \setlength{\pfbreakskip}{2\baselineskip}
+\newcommand{\pfbreakdisplay}{*\quad*\quad*}
+
+\def\pfbre@kdispl@y{\vbox to 1\pfbreakskip{\vss
+  \hb@xt@ \columnwidth{\hss \pfbreakdisplay \hss}%
+  \vss}}
+
+\edef\nopfbreakOutput{\the\output}
+\def\pfbreakOutput{%
+  \ifnum\outputpenalty=\pen@ltyabovepfbreak
+    \nopfbreakOutput
+    \pfbre@kdispl@y
+    \nobreak
+    \vskip-\pfbreakskip
+  \else\ifnum\outputpenalty=\pen@ltybelowpfbreak
+    \unvbox 255\relax
+    \nobreak
+    \vskip-\pfbreakskip
+    \pfbre@kdispl@y
+    \break
+  \else
+    \nopfbreakOutput
+  \fi
+  \fi}
+\output={\pfbreakOutput}
+
+\newcommand{\pfbreak}{\@ifstar{\@spfbreakgap}{\@pfbreakgap}}
+\newcommand{\@pfbreakgap}{%
+  \par {%
+  \skip@\lastskip
+  \nobreak
+  \vskip -\ifdim\prevdepth>\maxdepth \maxdepth
+          \else\ifdim\prevdepth>-1000pt\prevdepth
+            \else\ifinner 0pt
+              \else \pagedepth
+          \fi \fi \fi
+  \vskip -\skip@
+  \ifdim\skip@<\pfbreakskip
+    \advance\skip@ -1\skip@ \advance\skip@ 1\pfbreakskip
+  \fi
+  \penalty\pen@ltyabovepfbreak
+  \vskip\skip@
+  \penalty\pen@ltybelowpfbreak
+  }
+  \@afterindentfalse
+  \@afterheading
+}
+\newcommand{\@spfbreakgap}{%
+  \par {%
+  \skip@\lastskip
+  \nobreak
+  \vskip -\ifdim\prevdepth>\maxdepth \maxdepth
+          \else\ifdim\prevdepth>-1000pt\prevdepth
+            \else\ifinner 0pt
+              \else \pagedepth
+          \fi \fi \fi
+  \vskip -\skip@
+  \ifdim\skip@<\pfbreakskip
+    \advance\skip@ -1\skip@ \advance\skip@ 1\pfbreakskip
+  \fi
+  \penalty\pen@ltyabovepfbreak
+  \vskip\skip@
+  \penalty\pen@ltybelowpfbreak
+  }
+  \@afterindenttrue
+  \@afterheading
+}
+\makeatother
+% /PlainFancyBreak
+
+\begin{document}
+  \sloppy % ignore problems with line overflow / underflow
+  \setcounter{page}{1}
+% ===============================================
+% Old Beamer frontmatter
+% %   %     % \maketitle
+%   %   % 
+% ===============================================
+% Frontmatter
+  \pagenumbering{roman}
+  \pagestyle{empty}
+  % ------------------------------------------------
+  % r.1 - Half-Title - Recto
+  \begin{center}
+    \vspace*{\fill}
+
+    \LARGE\textbf{\textsf{Digital Librarian}}
+
+    \vspace*{\fill}
+    \vspace*{\fill}
+  \end{center}
+  \clearpage
+
+  % ------------------------------------------------
+  % r.2 - Series Title Page - Verso
+  \newpage
+  \emph{ }\newline
+    \clearpage
+
+  % ------------------------------------------------
+  % r.3 Titlepage - Recto
+  \begin{center}
+    \vspace*{\fill}
+
+    % \Huge\textbf{\textsf{Digital Librarian}}
+    \ttfamily{\Huge\color{blue}{Digital Librarian}}
+
+        \vspace*{0.125in}
+    {\centering
+     \Large\textbf{\textsf{GMU TechMan 2020 Business Plan}}
+    }
+
+
+    
+    \vspace*{0.25in}
+    \line(1,0){150}
+    \vspace*{0.25in}
+
+    \Large\textsf{Team Dewey}
+
+    \vspace*{\fill}
+    \vspace*{\fill}
+      \end{center}
+  \clearpage
+
+  % ------------------------------------------------
+  % r.4 Copyright Page
+  \vspace*{\fill}
+
+  \par\noindent\emph{Digital Librarian}\newline
+  \par\noindent\emph{Copyright © 2019 Bryan Birchfield, John Daily, Jake Hughes, Robert
+Koprowski, Ben Wilson}\newline
+
+  \footnotesize
+  \par\noindent No part of this publication may be reproduced, stored in a retrieval
+system, posted on the Internet, or transmitted, in any form or by any
+means, electronic, mechanical, photocopying, recording, or otherwise,
+without prior written permission from the authors. The only exception is
+by a reviewer, who may quote short excerpts in a review.\newline
+
+      \par\noindent ISBN 9-78098-3952-107 paperback
+      \par\noindent ISBN 9-78098-3952-107 ebook
+  \newline
+
+  \footnotesize
+  
+
+  % Producer Acknowledgements
+  \par\noindent Interior Design: Merovex Press % Per license terms for use of template.
+      \par\noindent Cover Design: Ben Wilson
+      \par\noindent Cover Image: Martin420 https://merovx.io/2WceXAL (CC BY-SA 4.0)
+      \par\noindent Copy Editor: Cynthia Shepp
+  \newline
+
+  \par\noindent       \par\noindent Team Dewey
+    \newline
+
+  
+  \par\noindent Printed in the United States of America
+  \newline
+
+  
+    \par\noindent Version: v0.1
+    \vspace*{\fill}
+  \clearpage\normalsize
+
+  % -----------------------------------------------
+  % r.5 - Dedication
+  
+  % -----------------------------------------------
+  % Table of Contents
+              {
+            \setcounter{tocdepth}{1}
+      \tableofcontents
+    }
+      
+  % -----------------------------------------------
+  % List of Tables
+      \listoftables
+  
+  % -----------------------------------------------
+  % List of Figures
+      \listoffigures
+  
+\newpage % End Frontmatter
+
+% ===============================================
+% Mainmatter
+\pagenumbering{arabic}\pagestyle{fancy}
+\section*{Confidentiality Statement and Legal Disclaimer}
+\addcontentsline{toc}{chapter}{Confidentiality Statement and Legal Disclaimer}
+
+\begin {multicols}{2}
+
+The provisions of this plan are privileged and confidential.
+Unauthorized reproduction or distribution of this business plan or any
+of its contents in any form or under any circumstances without prior
+written consent is prohibited. The Recipient is responsible for
+returning all copies of the Business Plan immediately upon request of
+the Company. The information contained herein is: (i) provided by the
+principal founders of the business and (ii) publicly available from
+directories, publications and websites, as mentioned in the body and the
+footnotes where possible or appropriate. In some cases, non-publicly
+available information was used, including independent research, studies
+or paid services from individuals and organizations. While the
+information set forth herein is deemed by the Company to be accurate,
+the Company shall not be held liable for the accuracy of or any
+omissions from this Business Plan or for any other written or oral
+communication transmitted to the Recipient and any other party in the
+course of its evaluation of transactions involving the Company.
+
+The information contained in the plan will require careful scrutiny,
+verification and due diligence efforts from the Recipients of the plan.
+Any person or entity seeking to make an investment in the business
+should not rely on the information set forth in the plan as complete. In
+addition, the analyses contained herein do not claim to be appraisals of
+the assets, or the valuation of any entity. The business makes no
+guarantees regarding any benefits received from investment, nor the
+legal, tax or accounting effects of any transaction; and this Plan does
+not constitute an offer to sell, or a solicitation of an offer to buy
+securities. In furnishing the Business Plan, the Company undertakes no
+obligation to provide Recipients of the Business Plan with access to any
+additional information or to update this Business Plan or to correct any
+inaccuracies that may be contained herein. There exists substantial
+information with respect to the business and its future prospects, and
+there are a substantial number of risks associated with an investment in
+the business, which are not set forth in the plan.
+
+Furthermore, the potential fulfillment of `forward looking statements'
+contained in the plan are subject to change due to unexpected events,
+market shifts, or circumstances that cannot be known at this time.
+Forward looking statements are based on expectations, estimates and
+projections at the time the statements were made that involve a number
+of economic, business, and numerous risks and uncertainties which could
+cause actual results or events to differ materially from those presently
+anticipated. Forward looking statements in the plan may be identified
+through the use of words such as, but not exclusively to: ``expects,''
+``will,'' ``anticipates,'' ``estimates,'' ``believes,'' or statements
+indicating certain actions ``may,'' ``could,'' or ``might'' occur. Such
+estimates and projections are subject to significant uncertainties
+beyond the control of the Company. Although such projections are
+believed to be realistic, no representations are made as to their
+ultimate attainability.
+
+\end {multicols}
+
+\chapter*{Executive Summary}
+\addcontentsline{toc}{chapter}{Executive Summary}
+
+\begin{quote}
+Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+\end{quote}
+
+Forged by a god. Foretold by a wizard. Found by a king.
+
+\begin {multicols}{2}
+
+Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Goal of the executive summary: Stimulate and motivate the investor to
+learn more.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Hook them on the first page.} Most investors are inundated
+  with business plans. Your first page must make them want to keep
+  reading.
+\item
+  \textbf{Keep it simple.} After reading the first page, investors often
+  do not understand the business. If your business is truly complex, you
+  can dive into the details later on.
+\item
+  \textbf{Be brief.} The executive summary should be 2 to 4 pages in
+  length.
+\end{itemize}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{business-description}{%
+\chapter{Business Description}\label{business-description}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\begin {multicols}{2}
+
+ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+\end {multicols}
+
+\hypertarget{company-profile}{%
+\chapter{Company Profile}\label{company-profile}}
+
+\hypertarget{company-analysis}{%
+\section{Company Analysis}\label{company-analysis}}
+
+\begin {multicols}{2}
+
+Goal of the company analysis section: Educate the investor about your
+company's history and explain why your team is perfect to execute on the
+business opportunity.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Give some history.} Provide the background on the company,
+  including date of formation, office location, legal structure, and
+  stage of development.
+\item
+  \textbf{Show off your track record.} Detail prior accomplishments,
+  including funding rounds, product launches, milestones reached, and
+  partnerships secured, among others.
+\item
+  \textbf{Why you?} Demonstrate your team's unique unfair competitive
+  advantage, whether it is technology, stellar management team, or key
+  partnerships.
+\end{itemize}
+
+\end {multicols}
+
+\hypertarget{personnel-plan}{%
+\section{Personnel Plan}\label{personnel-plan}}
+
+\begin {multicols}{2}
+\lipsum[1-5]
+
+\end {multicols}
+
+\hypertarget{leadership-team}{%
+\section{Leadership Team}\label{leadership-team}}
+
+Our management team and its consultants are qualified professionals with
+vast experience with plant installation and operations, purchasing and
+marketing. Our consultants will be employed during the start-up period
+(see Start-up table). We welcome any additional person from our
+investor's group that can contribute to the success of the company.
+
+\begin{figure}
+\centering
+\includegraphics{images/p2404232675-5.jpg}
+\caption{Birchfield, Daily, Hughes, Koprowski, Wilson}
+\end{figure}
+
+\hypertarget{bryan-birchfield}{%
+\subsubsection{Bryan Birchfield}\label{bryan-birchfield}}
+
+Bryan Birchfield is currently employed by collab9, LLC, a service
+provider offering cloud based unified communications and collaboration
+services to commercial, SLED and federal customers. Mr.~Birchfield has
+been the lead Solution Architect for collab9 since April 2015 and is
+responsible for leading technical discovery and solution engineering
+efforts for channel partners and customers. As the lead Solutions
+Architect, Mr.~Birchfield is responsible for assisting the VP of
+Business Development and Director of Sales with solution development and
+delivery of projects between \$100,000 and \$25 million. This includes
+leading technical and business requirement discovery sessions with
+customer stake holders, developing of sales strategies and customized
+cloud service products, as well as creating solution architecture,
+detailed configurations and statements of work.
+
+\hypertarget{john-daily}{%
+\subsubsection{John Daily}\label{john-daily}}
+
+John Daily is a project Manager for McMurdo Inc.~He leads international
+Search and Rescue IT system deployment projects through their life
+cycle. Taking the project from proposal stages to delivery.
+
+\hypertarget{jake-hughes}{%
+\subsubsection{Jake Hughes}\label{jake-hughes}}
+
+Jake Hughes is a Systems Engineer at Perspecta. His duties involve
+Designing, developing, and maintaining systems throughout their entire
+life cycle to meet customer requirements. Translate high-level
+strategies into detailed, lower-level requirements by using engineering
+disciplines and SDLC methodologies.
+
+\hypertarget{robert-koprowski}{%
+\subsubsection{Robert Koprowski}\label{robert-koprowski}}
+
+Robert Koprowski is a contracted IT Systems Administrator supporting
+various clients in the Northern Virginia region.
+
+\hypertarget{ben-wilson}{%
+\subsubsection{Ben Wilson}\label{ben-wilson}}
+
+Ben Wilson is a senior government project manager. He has 15 years
+experience in the technology field supporting efforts in software
+development, hardware and organizational change management. He is also
+the board president of the Accessible Community, a 503(c) non-profit
+startup focused on improving access to small businesses, community
+organizations, and the surrounding communities for people with
+disabilities.
+
+\hypertarget{market-analysis}{%
+\chapter{Market Analysis}\label{market-analysis}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\hypertarget{customer-analysis}{%
+\section{Customer Analysis}\label{customer-analysis}}
+
+Goal of customer analysis section: Convey the needs of your customers
+and show how your company's products/services satisfy those needs.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Define your customers precisely.} For example, it's not
+  adequate to say your company is targeting small businesses, since
+  there are several million of these.
+\item
+  \textbf{Detail their demographics.} How many customers fit the
+  definition? Where are these customers located? What is their average
+  income?
+\item
+  \textbf{Identify the needs of these customers.} Use data to
+  demonstrate past actions (X\% have purchased a similar product),
+  future projections (X\% said they would purchase the product), and/or
+  implications (X\% use a product/service which your product enhances).
+\item
+  \textbf{Explain what drives their decisions.} For example, is price
+  more important than quality?
+\item
+  \textbf{Detail the decision-making process.} For example, will the
+  customer seek multiple bids? Will the customer consult others in their
+  organization before making a decision? Good idea
+\end{itemize}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{market-size-potential}{%
+\section{Market Size \& Potential}\label{market-size-potential}}
+
+currentEnvironment
+
+Goal of the industry analysis section: Prove that there is a real market
+for your product or service.
+
+Demonstrate the need -- rather than the desire -- for your product.
+Ideally, people are willing to pay money to satisfy this need.
+
+Cite credible sources when describing the size and growth of your
+market.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Use independent research.} If possible, source research
+  through an independent research firm to enhance your credibility. For
+  general market sizes and trends, we suggest citing at least two
+  independent research firms.
+\item
+  \textbf{Focus on the ``relevant'' market size.} For example, if you
+  sell a portable biofeedback stress relief device, your relevant market
+  is not the entire health care market. In determining the relevant
+  market size, focus on the products or services that you will directly
+  compete against. It's not just a research report -- each fact, figure,
+  and projection should support your company's prospects for success.
+\item
+  \textbf{Don't ignore negative trends.} Be sure to explain how your
+  company would overcome potential negative trends. Such analysis will
+  relieve investor concern and enhance the plan's credibility.
+\item
+  \textbf{Be prepared for due diligence.} It's critical that the data
+  you present is verifiable, since any serious investor will conduct
+  extensive due diligence.
+\end{itemize}
+
+\hypertarget{competitive-landscape}{%
+\section{Competitive Landscape}\label{competitive-landscape}}
+
+Goal of the competitive analysis section: Define the competition and
+demonstrate your competitive advantage.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{List competitors.} Many companies make the mistake of
+  conveying that they have few or no real competitors. From an
+  investor's standpoint, a competitor is something that fulfills the
+  same need as your product. If you claim you have no competitors, you
+  are seriously undermining the credibility of your plan.
+\item
+  \textbf{Include direct and indirect competitors.} Direct competitors
+  serve the same target market with similar products. Indirect
+  competitors serve the same target market with different products, or
+  different target markets with similar products.
+\item
+  \textbf{List public companies (when relevant, of course).} A public
+  company implies that the market size is big. This gives the assurance
+  that if management executes well, the company has substantial profit
+  and liquidity potential.
+\item
+  \textbf{Don't just list competitors.} Carefully describe their
+  strengths and weaknesses, as well as the key drivers of competitive
+  differentiation in the marketplace. And when describing competitors'
+  weaknesses, be sure to use objective information (e.g.~market
+  research).
+\item
+  \textbf{Demonstrate barriers to entry.} In describing the competitive
+  landscape, show how your business model creates competitive
+  advantages, and -- more importantly -- defensible barriers to entry.
+\end{itemize}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{operations}{%
+\chapter{Operations}\label{operations}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\hypertarget{business-model}{%
+\section{Business Model}\label{business-model}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{staffing-requirements}{%
+\section{Staffing Requirements}\label{staffing-requirements}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{operational-requirements}{%
+\section{Operational Requirements}\label{operational-requirements}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{strategic-evaluation}{%
+\chapter{Strategic Evaluation}\label{strategic-evaluation}}
+
+\hypertarget{distinctive-competitive-advantages}{%
+\section{Distinctive Competitive
+Advantages}\label{distinctive-competitive-advantages}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{strategic-relationships}{%
+\section{Strategic Relationships}\label{strategic-relationships}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{risk-analysis-mitigation}{%
+\section{Risk Analysis \& Mitigation}\label{risk-analysis-mitigation}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{swot-analysis}{%
+\section{SWOT Analysis}\label{swot-analysis}}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{marketing-strategy}{%
+\chapter{Marketing Strategy}\label{marketing-strategy}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\hypertarget{goals}{%
+\section{Goals}\label{goals}}
+
+\begin {multicols}{2}
+
+Goal of the marketing plan: Describe how your company will penetrate the
+market, deliver products/services, and retain customers.
+
+\textbf{Focus on the 4 P's.} They are: Products, Promotions, Price, and
+Place.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Products.} Detail all current and future products and services
+  -- but focus primarily on the short-to-intermediate time horizon.
+\item
+  \textbf{Promotions.} Explain exactly which marketing/advertising
+  strategies will be used and why.
+\item
+  \textbf{Price.} Be sure to provide a clear rationale for your pricing
+  strategy.
+\item
+  \textbf{Place.} Explain exactly how your products/services will be
+  delivered to your customers.
+\end{itemize}
+
+\textbf{Detail your customer retention plan.} Explain how you will
+retain your customers, whether through customer relationship management
+(CRM) applications, building network externalities, introducing ongoing
+value-added services, or other means.
+
+\textbf{Define your partnerships.} From an investor's perspective, what
+partnership you have with whom is not nearly as important as the
+specific terms of the partnership. Be sure to document the specifics of
+the partnerships (e.g.~how it will work, the financial terms, the types
+of customer leads expected from each partner, etc.).
+
+\end {multicols}
+
+\hypertarget{ipsum-lorem}{%
+\section{Ipsum Lorem}\label{ipsum-lorem}}
+
+\begin {multicols}{2}
+
+ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+\end {multicols}
+
+\hypertarget{financials}{%
+\chapter{Financials}\label{financials}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\begin {multicols}{2}
+
+Goal of the financial plan: Explain how your business will generate
+returns for your investors.
+
+\begin{itemize}
+\item
+  \textbf{Detail all revenue streams.} Be sure to include all revenue
+  streams. Depending on the type of business, these may include sales of
+  products/services, referral revenues, advertising sales,
+  licensing/royalty fees, and/or data sales.
+\item
+  \textbf{Be consistent with your pro-forma statements.} Pro-forma
+  statements are projected financial statements. It is critical that
+  these projections reflect the other sections of your business plan.
+\item
+  \textbf{Validate your assumptions and projections.} The financial plan
+  must detail your key assumptions, and it is critical that these
+  assumptions are feasible. Be sure to use competitive research to
+  validate your projections and assumptions versus the reality in your
+  market place. Assessing and basing financial projections on those of
+  similar firms will greatly validate the realism and maturity of the
+  financial projections.
+\item
+  \textbf{Detail the uses of funds.} Understandably, investors want to
+  know what, specifically, you plan to do with their money. Uses of
+  funds could include expenses involved with marketing, staffing,
+  technology development, office space, among other uses.
+\item
+  \textbf{Provide a clear exit strategy.} All investors are motivated by
+  a clear picture of your exit strategy, or the timing and method
+  through which they can ``cash in'' on their investment. Be sure to
+  provide comparable examples of firms who have successfully exited. The
+  most common exits are IPOs or acquisitions. And while the exact method
+  is not always crucial, the investor wants to see this planning in
+  order to better understand the management team's motivation and
+  commitment to building long-term value.
+\end{itemize}
+
+\end {multicols}
+
+\begin{table}[htbp!]
+\centering
+\caption{Latin American Gender Quota Laws in Lower or Single House \label{LAquotas}}
+\begin{tabular}{lcccc} \hline\hline
+\textbf{Country} & \textbf{Adoption's} & \textbf{\% of the} & \multicolumn{2}{c}{\textbf{Women Representation}}\\
+ & \textbf{Year} & \textbf{Quota} & \textbf{1 yr Before Law} & \textbf{January 2016}\\
+\hline
+    Brazil & 1995 & 30\% & 6.6\% & 9.9\% \\
+    Venezuela & 1998 & 30\% & 5.9\% & 14.4\% \\
+    Paraguay & 1996 & 20\% & 2.5\% & 15\% \\
+    Panama & 1997 & 30\% & 9.7\% & 18.3\% \\
+    Dominican Republic & 1997 & 33\% & 11.7\% & 20.8\% \\
+    Peru & 1997 & 30\% & 10.8\% & 22.3\% \\
+    Costa Rica & 1996 & 50\% & 15.8\% & 33.3\% \\
+    Argentina & 1991 & 30\% & 6\% & 35.8\% \\
+    Ecuador & 1997 & 50\% & 17\% & 41.6\% \\
+    Bolivia & 1997 & 50\% & 6.9\% & 53.1\% \\
+    \hline
+\end{tabular}
+\begin{flushleft}
+\scriptsize\emph{Source:} {Freidenberg and Garcia (2015), Sagarzazu and Silva (2015), and IPU (2016).}
+\end{flushleft}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+\hline
+\textbf{Company} & \textbf{Company} & \textbf{Company} \\
+\hline
+Amazon & Apple & Western Digital \\
+Cisco Systems & Computer Science Corps & Qualcomm \\
+Danaher & eBay & Texas Instruments \\
+EMC & Thermo Fisher Scientific & Xerox\\
+Google & HPQ & Microsoft\\
+IBM & Intel & Oracle\\
+Jabil Circuit & Micron Technology \cite{Fortune} \\
+\hline
+\end{tabular}
+\caption{Companies that were analyzed in this research}
+\end{table}
+
+\begin {multicols}{2}
+
+\lipsum
+
+\end {multicols}
+
+\hypertarget{important-assumptions}{%
+\section{Important Assumptions}\label{important-assumptions}}
+
+The financial plan based on important assumptions, detailed in the
+following statements:
+
+\begin{itemize}
+\tightlist
+\item
+  Due to the initial limited production in comparison to the market
+  size, Company assumes that even a slow-growth economy, will not affect
+  our plan for the next five years.
+\item
+  Company forecasts that there would be no unforeseen changes in
+  technology to make our products obsolete. Pallet buyers are looking
+  for cost effective solutions for replacing the high cost of
+  purchasing, repairing, and discarding wooden pallets and RST-PAL
+  pallets offer the solution by providing a longer lasting more durable
+  pallet.
+\item
+  Cash flow is not expected to be a problem, with most pallets being
+  paid for on delivery. There will be exceptions for specific customers,
+  as an example, the U.S. Government, based on the quantity of pallets
+  that are ordered, but generally, payments for pallets will be paid in
+  full upon delivery.
+\item
+  Company's growth is based on internal financial resources. Company
+  will budget 50\% for growth and 50\% from the profits as dividends
+  after taxes (from year two forward and as long as it does not affect
+  the planned growth of the company).
+\item
+  The source of raw material (scrap tires) is virtually endless as long
+  as cars continue to roll on tires. Presently, 250 million tires are
+  added each year to scrap tire stockpiles all over the country.
+\item
+  Company assumes a short holding of inventory beyond the curing time of
+  the pallets and transportation arrangements.
+\item
+  Company assumes a 5\% annual raise in our selling price, which is
+  comparable to the wooden pallet industry and fluctuating lumber costs.
+\item
+  Company assumes no raise in our material costs, because the quantities
+  we purchase will increase, and Company anticipates discounts to offset
+  any increased costs.
+\item
+  Company assumes an average sales price per pallet in the first year of
+  production to be \$18.50, which is significantly less costly than
+  hardwood pallets whose entire cost includes purchase, repair,
+  maintenance, and discard/disposal.
+\end{itemize}
+
+\hypertarget{break-even-analysis}{%
+\section{Break-even Analysis}\label{break-even-analysis}}
+
+\lipsum[1-3]
+
+\hypertarget{long-term-plan}{%
+\section{Long-term Plan}\label{long-term-plan}}
+
+\lipsum[1-3]
+
+\hypertarget{projected-balance-sheet}{%
+\section{Projected Balance Sheet}\label{projected-balance-sheet}}
+
+\lipsum[1-3]
+
+\hypertarget{projected-cash-flow}{%
+\section{Projected Cash Flow}\label{projected-cash-flow}}
+
+\lipsum[1-3]
+
+\hypertarget{profit-loss}{%
+\section{Profit \& Loss}\label{profit-loss}}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule
+& Q2 FY18 & Q3 FY18 & Q4 FY18 & Q1 FY19\tabularnewline
+\midrule
+\endhead
+Net Sales & 1,703.1 & 2,022.0 & 3,184.5 & 3,476.6\tabularnewline
+Other Income & 4.0 & 9.9 & 11.8 & 31.8\tabularnewline
+Total Income & 1,707.2 & 2,031.9 & 3,196.3 & 3,508.4\tabularnewline
+Expenses & & & &\tabularnewline
+Total Material Consumed & 1,282.5 & 1,374.7 & 2,028.2 &
+2,200.4\tabularnewline
+Employee Benefit Expense & 92.1 & 128.4 & 155.6 & 226.5\tabularnewline
+Other Expenses & 71.2 & 167.3 & 265.6 & 299.7\tabularnewline
+EBITDA & 261.3 & 361.6 & 746.9 & 781.8\tabularnewline
+\% EBITDA & 15.3\% & 17.8\% & 23.4\% & 22.3\%\tabularnewline
+Depreciation Expense & 28.4 & 45.8 & 60.0 & 69.3\tabularnewline
+Financing Cost & 66.9 & 128.8 & 198.1 & 273.9\tabularnewline
+Profit Before Tax & 166.0 & 186.9 & 488.8 & 438.5\tabularnewline
+Taxes & 4.0 & -0.8 & 138.8 & 100.8\tabularnewline
+Profit After Tax & 162.0 & 187.7 & 350.0 & 337.7\tabularnewline
+\% PAT & 9.5\% & 9.2\% & 11.0\% & 9.6\%\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{disclaimer}{%
+\section{Disclaimer}\label{disclaimer}}
+
+The financial projections that appear in this Business Plan are
+estimated revenues, expenses, and cash flow, which are based on research
+and the assumptions discussed throughout this Business Plan. They
+represent the best of management's knowledge and belief. The Company's
+expected revenues, expenses, and cash flow for the projected periods are
+subject to the Company's ability to develop sales and production levels
+at the price and costs estimated by management. Accordingly, these
+projections reflect management's estimates as of date of publication,
+and its expected course of action if such sales and production levels
+are attained at the price and costs anticipated.
+
+These projected financial statements are for the purpose of providing
+updated information to existing and new investors. These projected
+financial statements should not be considered to be a presentation to
+forecast future results. Accordingly, these projections may not be
+useful for other purposes.
+
+The assumptions disclosed herein are those that management believes are
+significant to the projections. Furthermore, even if the sales and
+production levels as well as the projected price and costs are attained,
+there will usually be differences between projected and actual results
+because events and circumstances frequently do not occur as expected,
+and those differences may be material.
+
+\hypertarget{roadmap}{%
+\chapter{Roadmap}\label{roadmap}}
+
+\begin{quote}
+\textbf{Summary.} Ipsum Lorem ipsum dolor sit amet, consectetur
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+\begin {multicols}{2}
+
+ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+semper massa. Nunc tristique felis at scelerisque scelerisque. In sed
+nunc ac ex egestas vestibulum sed sed nisl. Suspendisse rhoncus nisi at
+felis mollis gravida quis a erat. Nunc cursus lectus et neque facilisis,
+nec accumsan odio placerat. Sed non sollicitudin nisl. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos.
+
+Maecenas dapibus sapien sit amet nibh congue vulputate. Pellentesque
+viverra, dolor vitae varius egestas, sem purus ullamcorper est, ut
+molestie lorem massa nec turpis. Etiam sollicitudin nisl nulla, vel
+maximus nunc varius a. Etiam elementum porttitor sem sit amet hendrerit.
+Nam interdum, diam et viverra aliquam, nunc tellus sagittis diam, sed
+ornare erat justo at lorem. Praesent quis augue a neque placerat auctor.
+Donec vitae eros arcu. Ut lacinia eros ligula. Vestibulum tristique leo
+at dui ultrices consequat. Nullam sagittis sollicitudin rhoncus.
+Phasellus pulvinar diam eu leo posuere egestas. Aliquam diam massa,
+egestas eget mauris sit amet, vehicula eleifend mauris. Nunc sed turpis
+vel dui vehicula posuere. Ut non turpis purus. Vivamus dignissim mi
+varius commodo sagittis. Nunc lacinia purus metus, in sodales nisi
+interdum non.
+
+Nunc a sapien semper, convallis ligula non, dignissim nulla. Curabitur
+vitae placerat ante, at egestas lacus. Duis facilisis felis et elit
+scelerisque, a faucibus leo lobortis. Donec tristique rutrum augue non
+malesuada. Nam orci magna, cursus nec vulputate non, sodales id nulla.
+Duis tellus erat, placerat aliquam diam commodo, tristique rhoncus quam.
+Morbi faucibus, felis vitae ullamcorper varius, nisl nulla tristique
+lacus, id porta nunc lacus vel ligula. Aliquam nec hendrerit risus.
+Vivamus mollis commodo tortor, sed vulputate diam tincidunt ut. Donec
+luctus faucibus ullamcorper. Morbi nec lacus tellus. Duis nibh odio,
+tincidunt sed leo ultricies, euismod malesuada sapien. Suspendisse
+potenti. Curabitur pretium est at lobortis laoreet.
+
+Nunc fermentum, mi gravida suscipit tincidunt, magna lectus lacinia
+nunc, ac sollicitudin tortor felis eu nisi. Maecenas tempus risus
+ligula, nec placerat nibh condimentum non. Morbi finibus odio est, ut
+commodo urna finibus ac. Mauris volutpat, neque ac posuere porta, risus
+tortor varius ex, eget feugiat mauris lorem eget leo. Nullam hendrerit
+eget turpis ac auctor. Fusce urna lorem, volutpat in lobortis sit amet,
+pulvinar a arcu. Sed dignissim malesuada ante, vitae porta turpis
+consectetur a. Sed bibendum neque et suscipit convallis. Etiam
+vulputate, augue ac luctus ornare, elit purus maximus diam, sed maximus
+lacus est ut lorem. In non arcu sem. Praesent accumsan lorem est,
+venenatis molestie neque placerat quis. Curabitur at massa elit.
+Curabitur viverra in purus ac elementum. Sed sed porta ex.
+
+Nunc in purus molestie, consectetur mauris in, posuere dui. Suspendisse
+potenti. Vestibulum pharetra enim et quam facilisis, eget vulputate urna
+egestas. Sed eleifend congue enim, semper semper leo consectetur at.
+Nulla tristique non mi tincidunt suscipit. Mauris eleifend, est at porta
+suscipit, diam turpis ornare est, vel iaculis velit ligula ac mauris.
+Vivamus suscipit pharetra arcu id suscipit.
+
+\end {multicols}
+
+% ===============================================
+% Backmatter
+
+
+\end{document}
