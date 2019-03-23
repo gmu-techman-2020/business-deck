@@ -74,7 +74,7 @@ docx:
 
 book:
 	mkdir -p $(BUILD_DIR)
-	pandoc $(PDF_BUILDER_FLAGS) -o $(BUILD_DIR)$(OUTPUT_BASENAME)-book.tex $(METADATA) $(CHAPTERS)
+	pandoc $(PDF_BUILDER_FLAGS) -o $(BUILD_DIR)$(OUTPUT_BASENAME)-book.pdf $(METADATA) $(CHAPTERS)
 
 cover:
 	pandoc --template=templates/cover.tex --pdf-engine=xelatex -o $(BUILD_DIR)$(OUTPUT_BASENAME)-cover.pdf $(METADATA)

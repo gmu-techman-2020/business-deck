@@ -505,6 +505,7 @@ $endif$
 
 % ===============================================
 % Frontmatter
+\frontmatter
   \pagenumbering{roman}
   \pagestyle{empty}
   % ------------------------------------------------
@@ -658,11 +659,13 @@ $endif$
 
 % ===============================================
 % Mainmatter
+\mainmatter
 \pagenumbering{arabic}\pagestyle{fancy}
 $body$
 
 % ===============================================
 % Backmatter
+\backmatter 
 $if(natbib)$
   $if(bibliography)$
     $if(biblio-title)$
@@ -682,6 +685,7 @@ $if(natbib)$
     $endif$
   $endif$
 $endif$
+
 
 $if(biblatex)$
   $if(beamer)$
