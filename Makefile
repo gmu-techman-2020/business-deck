@@ -89,9 +89,6 @@ presentation:
 
 handout:
 	pandoc $(BEAMER_BUILDER_FLAGS) -V handout -o $(BUILD_DIR)$(OUTPUT_BASENAME)-handout.pdf $(METADATA) $(SLIDES)
-	# pdfnup $(BUILD_DIR)$(OUTPUT_BASENAME)-handout.pdf --nup 1x3 --no-landscape --keepinfo \
-	# 		--paper letterpaper --frame true --scale 0.9 \
-	# 		--suffix "nup"
 
 $(BUILD_DIR)$(OUTPUT_BASENAME).epub:
 	mkdir -p $(BUILD_DIR)
