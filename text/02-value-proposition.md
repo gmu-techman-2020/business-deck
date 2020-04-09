@@ -1,6 +1,6 @@
 # Value Proposition
 
-Professional, publishable books without all the hassles
+> Helping Authors Manage Their Creativity
 
 ## Vision
 
