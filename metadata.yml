@@ -1,16 +1,17 @@
 ---
-title:      Digital Librarian
-subtitle:   GMU TechMan 2020 Business Plan
+title:      Verkilo Business Plan
+subtitle:   Helping Authors Manage Their Creativity
 institute:  George Mason University
-author:     Team Dewey
+author:     Team Verkilo
 authors:
   - Brian Birchfield
-  - John Daily
-  - Jake Hughes
   - Robert Koprowski
   - Ben Wilson
 header-includes:
   - \newcommand{\hideFromPandoc}[1]{#1}
+  - \usepackage{pdflscape}
+  - \usepackage{lscape}
+  - \usepackage{scrextend}
   - \hideFromPandoc{
       \let\Begin\begin
       \let\End\end
@@ -22,7 +23,9 @@ header-includes:
   - \definecolor{yellow}{cmyk}{0, 0.0, 0.56, 0.58}
   - \definecolor{orange}{cmyk}{0, 0.34, 0.56, 0.58}
   - \usepackage{lipsum}
-  - \setmonofont{Permanent Marker}
+  - \setmonofont{Source Sans Pro}
+  - \usepackage{adjustbox}
+
 themeoptions:
   - progressbar=frametitle
   - block=fill

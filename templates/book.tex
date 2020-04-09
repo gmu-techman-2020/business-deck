@@ -1,13 +1,14 @@
 \PassOptionsToPackage{unicode=true$for(hyperrefoptions)$,$hyperrefoptions$$endfor$}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 $if(colorlinks)$
-\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+% \PassOptionsToPackage{dvipsnames,svgnames*,x11names*,natural}{xcolor}
 $endif$$if(dir)$$if(latex-dir-rtl)$
 \PassOptionsToPackage{RTLdocument}{bidi}
 $endif$$endif$%
+
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$if(beamer)$ignorenonframetext,$if(handout)$handout,$endif$$if(aspectratio)$aspectratio=$aspectratio$,$endif$$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-\usepackage{multicol}
-\setlength\columnsep{18pt}
+% \usepackage[dvipsnames,svgnames*,x11names*]{xcolor}
+\usepackage[svgnames]{xcolor}
 \usepackage{titlesec}
 \usepackage{graphicx}
 % \usepackage{lipsum}
@@ -67,33 +68,54 @@ $endif$
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
-
+% $if(fontfamily)$
+% \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
+% $else$
+% % \usepackage{lmodern}
+% \usepackage{fontspec}
+% \usepackage{xunicode}
+% \usepackage{xltxtra}
+% \defaultfontfeatures{Mapping=tex-text}
+%
+% % \usepackage{cabin}
+% % \usepackage{librecaslon}
+% % \setmainfont{Libre Caslon Text}
+% % \setsansfont{Droid Sans}
+% % \setmonofont{Droid Sans Mono}
+% % % \setsansfont{cabin}
+% $endif$
 \usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{xltxtra}
+% \usepackage{xunicode}
+% \usepackage{xltxtra}
 
 $if(seriffont)$
   \setmainfont{$seriffont$}
 $else$
-  \setmainfont{Libre Caslon Text}
+  \setmainfont{Libre Baskerville}
 $endif$
 $if(sansfont)$
   \setsansfont{$sansfont$}
 $else$
-  \setsansfont{Lato}
+  \setsansfont{Libre Franklin}
 $endif$
 $if(monofont)$
   \setmonofont{$monofont$}
 $else$
-  \setmonofont{Courier}
+  \setmonofont{Inconsolata}
 $endif$
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
 
-\usepackage{setspace}
-$if(linestretch)$
-\setstretch{$linestretch$}
-$else$
-\setstretch{1.1}
-$endif$
+% Dates
+%-------
+\usepackage{datetime}
+\newdateformat{yearonly}{\THEYEAR}
+\newdateformat{usmonthyear}{\monthname[\THEMONTH], \THEYEAR}
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or
+  December\fi\space\number\year
+}
 
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -180,11 +202,9 @@ $else$
 $endif$
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
-
 $endif$
-
 $if(colorlinks)$
-\usepackage{xcolor}
+% \usepackage{xcolor}
 $endif$
 \usepackage{hyperref}
 \hypersetup{
@@ -212,21 +232,68 @@ $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
 
-\newcommand{\AFourSize}{paperwidth=210mm,paperheight=297mm,margin=2cm,twoside}
-\newcommand{\Letter}{paperwidth=8.5in,paperheight=11in,left=1.25in,right=.8in,top=1.0in,bottom=1.0in,twoside}
-\newcommand{\LetterS}{paperwidth=8.5in,paperheight=11in,left=1.0in,right=2in,top=1.0in,bottom=1.0in,twoside}
-\newcommand{\USTrade}{paperwidth=6in,paperheight=9in,left=0.875in,right=0.625in,top=0.525in,bottom=0.525in,twoside}
-\newcommand{\Digest}{paperwidth=5.5in,paperheight=8.5in,left=0.875in,right=0.625in,top=0.825in,bottom=0.825in,twoside}
-\newcommand{\USSmallTrade}{paperwidth=5.25in,paperheight=8in,left=0.875in,right=0.625in,top=0.825in,bottom=0.825in,twoside}
-\newcommand{\Novella}{paperwidth=5in,paperheight=8in,left=0.775in,right=0.525in,top=0.825in,bottom=0.725in,twoside}
-\newcommand{\MassMarket}{paperwidth=4.25in,paperheight=7in,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
-\newcommand{\UKAFormat}{paperwidth=111mm,paperheight=178mm,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
-\newcommand{\UKBFormat}{paperwidth=129mm,paperheight=198mm,left=0.775in,right=0.525in,top=0.825in,bottom=0.825in,twoside}
+$if(bleed)$
+\newcommand{\AFourSize}{ paperwidth=210mm, paperheight=297mm,margin=2cm,twoside}
+\newcommand{\Letter}{    paperwidth=8.625in,paperheight=11.25in,margin=1.0in,twoside}
+\newcommand{\LargeTrade}{paperwidth=8.125in,paperheight=10.25in,outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\Textbook}{  paperwidth=7.125in,paperheight=10.25in,outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\Trade}{     paperwidth=6.125in,paperheight=9.25in, outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\Digest}{    paperwidth=5.625in,paperheight=8.75in, outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\SmallTrade}{paperwidth=5.375in,paperheight=8.25in, outer=16mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\Novella}{   paperwidth=5.125in,paperheight=8.25in, outer=16mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\UKAFormat}{ paperwidth=114mm, paperheight=184mm,   outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+\newcommand{\UKBFormat}{ paperwidth=132mm, paperheight=204mm,   outer=20mm,bottom=20mm,top=23mm,inner=2cm,twoside}
+$else$
+\newcommand{\AFourSize}{ paperwidth=21.00cm,paperheight=29.70cm,margin=20mm,twoside}
+\newcommand{\Letter}{    paperwidth=21.59cm,paperheight=27.94cm,margin=25mm,twoside}                              % 8.5x11"
+\newcommand{\LargeTrade}{paperwidth=20.32cm,paperheight=25.40cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 8x10"
+\newcommand{\Textbook}{  paperwidth=17.78cm,paperheight=25.40cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 7x10"
+\newcommand{\Trade}{     paperwidth=15.24cm,paperheight=22.86cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 6x9"
+\newcommand{\Digest}{    paperwidth=13.97cm,paperheight=21.59cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 5.50x8.5"
+\newcommand{\SmallTrade}{paperwidth=13.34cm,paperheight=20.32cm,outer=13mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 5.25x8"
+\newcommand{\Novella}{   paperwidth=12.70cm,paperheight=20.32cm,outer=13mm,bottom=17mm,top=2cm,inner=2cm,twoside} % 5x8"
+\newcommand{\UKBFormat}{ paperwidth=12.90cm,paperheight=19.80cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside}
+\newcommand{\UKAFormat}{ paperwidth=11.10cm,paperheight=17.80cm,outer=17mm,bottom=17mm,top=2cm,inner=2cm,twoside}
+$endif$
+\newcommand{\AFourSizeLinespace}{ 1.4}
+\newcommand{\LetterLinespace}{    1.4} % 11"
+\newcommand{\LargeTradeLinespace}{1.4} % 10"
+\newcommand{\TextbookLinespace}{  1.4} % 10"
+\newcommand{\TradeLinespace}{     1.2} % 9"
+\newcommand{\DigestLinespace}{    1.1}
+\newcommand{\SmallTradeLinespace}{1.1}
+\newcommand{\NovellaLinespace}{   1.1}
+\newcommand{\UKBFormatLinespace}{ 1.1}
+\newcommand{\UKAFormatLinespace}{ 1.1}
+
+
+% \newcommand{\AFourSize}{ paperwidth=210mm, paperheight=297mm,margin=2cm,twoside}
+% \newcommand{\Letter}{    paperwidth=8.50in,paperheight=11in, margin=1.0in,twoside}
+% \newcommand{\LargeTrade}{paperwidth=8.00in,paperheight=10in, left=0.875in,outer=0.825in,top=0.825in,bottom=0.825in,twoside}
+% \newcommand{\USTextbook}{paperwidth=7.00in,paperheight=10in, left=0.875in,outer=0.825in,top=0.825in,bottom=0.825in,twoside}
+% \newcommand{\Trade}{     paperwidth=6.00in,paperheight=9in,  left=0.875in,right=0.625in,top=0.525in,bottom=0.625in,twoside}
+% \newcommand{\Digest}{    paperwidth=5.50in,paperheight=8.5in,left=0.875in,right=0.625in,top=0.825in,bottom=0.625in,twoside}
+% \newcommand{\SmallTrade}{paperwidth=5.25in,paperheight=8in,  left=0.875in,right=0.625in,top=0.825in,bottom=0.625in,twoside}
+% \newcommand{\Novella}{   paperwidth=5.00in,paperheight=8in,  left=0.775in,right=0.525in,top=0.825in,bottom=0.625in,twoside}
+% \newcommand{\MassMarket}{paperwidth=4.25in,paperheight=7in,  left=0.775in,right=0.525in,top=0.825in,bottom=0.625in,twoside}
+% \newcommand{\UKAFormat}{ paperwidth=111mm, paperheight=178mm,left=2cm,right=15mm,top=2cm,bottom=16mm,twoside}
+% \newcommand{\UKBFormat}{ paperwidth=129mm, paperheight=198mm,left=2cm,right=15mm,top=2cm,bottom=16mm,twoside}
 $if(trimsize)$
 \usepackage[\$trimsize$]{geometry}
 $else$
-\usepackage[\USTrade]{geometry}
+\usepackage[\Trade]{geometry}
 $endif$
+$if(crop)$
+\usepackage[letter,frame,center]{crop}
+$endif$
+
+\usepackage{setspace}
+$if(linestretch)$
+\setstretch{$linestretch$}
+$else$
+\setstretch{\$trimsize$Linespace}
+$endif$
+
 
 $if(beamer)$
 \newif\ifbibliography
@@ -306,24 +373,11 @@ $endif$
 \def\fps@figure{htbp}
 \makeatother
 
-$for(header-includes)$
-$header-includes$
-$endfor$
+% $for(header-includes)$
+% $header-includes$
+% $endfor$
 % HEADER DESIGN
 \usepackage{fancyhdr} % headers
-
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \fancyfoot[RO, LE] {\sffamily\thepage}
-  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-  $if(footer-text)$
-    \fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{$footer-text$}}
-
-    \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
-  $endif$
-}
-
-
 \pagestyle{fancy} % style for headers
 \usepackage{pifont} % for the copyright symbol
 \headheight 0.25in % height of header
@@ -332,44 +386,27 @@ $endfor$
 \parindent 0.25in % = 6.35mm
 \newcommand{\str}{\rule{0pt}{16pt}} % strut used in toc
 %%% header stuff
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{: #1}{}}
 \newcommand{\currpage}{\footnotesize\thepage} % use in headers
 \fancyhead{} % clear header fields, required
 \fancyfoot{} % clear footer fields, required
-\renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-$if(show-header)$
-\renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
-\fancyhead[LE]{ \footnotesize\sffamily\MakeUppercase{$title$: $subtitle$}  } % Odd Page, Right side
-\fancyhead[RO]{ \footnotesize\sffamily\MakeUppercase{\leftmark{}\rightmark}  } % Odd Page, Right side
-$endif$
+% \fancyfoot[C]{\currpage}
+\fancyhead[LE,RO]{\currpage}
 
-\fancyfoot[RO, LE] {\sffamily\thepage}
-$if(footer-text)$
-\fancyfoot[C]{\footnotesize\sffamily\MakeUppercase{$footer-text$}}
-\renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
-$endif$
-
-% \renewcommand\headrulewidth{0pt} % for no rule line under header
-
-\titleformat
-{\chapter} % command
-[display] % shape
-{\ttfamily\Huge\color{blue}} % format
-{} % label
-{0.5ex} % sep
-{
-    \centering
-} % before-code
-[
-% \vspace{-0.5ex}%
-% \rule{\textwidth}{0.3pt}
-] % after-code
+\fancyhead[CO]{ \footnotesize\MakeUppercase{$title$}  } % Odd Page, Right side
+\fancyhead[CE]{ \footnotesize\MakeUppercase{$author$} } % Even Page, Right side
+\renewcommand\headrulewidth{0pt} % for no rule line under header
 
 
-\titleformat{\section}[display]
-{\sffamily\bfseries\Large\color{red}}
-{\thesection.}{0.5em}{\nopagebreak[4]}
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\huge\bfseries\color{$if(chapter-color)$$chapter-color$$else$Black$endif$}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+% \titleformat{\chapter}[display]
+%   {\bfseries\Large}
+%   {\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%   {1ex}
+%   {\titlerule\vspace{1ex}\filleft}
+%   [\vspace{1ex}\titlerule]
 
 $if(lang)$
   \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -408,6 +445,14 @@ $if(biblatex)$
   $for(bibliography)$
     \addbibresource{$bibliography$}
   $endfor$
+$endif$
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
 $endif$
 
 % ===============================================
@@ -512,10 +557,9 @@ $endif$
 %     \end{abstract}
 %   $endif$
 % $endif$
-$if(frontmatter)$
+
 % ===============================================
 % Frontmatter
-\frontmatter
   \pagenumbering{roman}
   \pagestyle{empty}
   % ------------------------------------------------
@@ -550,16 +594,11 @@ $if(frontmatter)$
   \begin{center}
     \vspace*{\fill}
 
-    % \Huge\textbf{\textsf{$title$}}
-    \ttfamily{\Huge\color{blue}{$title$}}
-
+    \Huge\textbf{\textsf{$title$}}
     $if(subtitle)$
+
     \vspace*{0.125in}
-    {\centering
-     \Large\textbf{\textsf{$subtitle$}}
-    }
-
-
+    \Large\textbf{\textsf{$subtitle$}}
     $endif$
 
     \vspace*{0.25in}
@@ -628,7 +667,7 @@ $if(frontmatter)$
     $thanks$
     \newpage
   $endif$
-$endif$
+
   % -----------------------------------------------
   % Table of Contents
   $if(toc)$
@@ -647,6 +686,9 @@ $endif$
       $if(colorlinks)$
         \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$$endif$}
       $endif$
+      \makeatletter
+      \renewcommand*\l@section{\@dottedtocline{1}{1.5em}{3.0em}}
+      \makeatother
       \setcounter{tocdepth}{$toc-depth$}
       \tableofcontents
     }
@@ -669,13 +711,11 @@ $endif$
 
 % ===============================================
 % Mainmatter
-\mainmatter
 \pagenumbering{arabic}\pagestyle{fancy}
 $body$
 
 % ===============================================
 % Backmatter
-\backmatter 
 $if(natbib)$
   $if(bibliography)$
     $if(biblio-title)$
@@ -695,7 +735,6 @@ $if(natbib)$
     $endif$
   $endif$
 $endif$
-
 
 $if(biblatex)$
   $if(beamer)$
