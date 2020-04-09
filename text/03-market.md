@@ -25,13 +25,13 @@ See Figure 1: Self-Publishing Books in the US Market, _infra._
 
 Our market landscape analysis shows a diverse market of products and services that compete with Verkilo's vision. Our market assessment aligns with the Five Forces as applied to software as a service (SaaS). [@annelise_porters_nodate] The competitive nature of this segment requires we establish a brand and product differentiation to stand out. Verkilo seeks to compete by having a complete vision of the production cycle and automating processes the competition leaves manual.
 
-**New Entrant Threat.** ** High.**The threat of new entrants in any SaaS-related market is high because the ease of establishing infrastructure and product is low. This is true despite barriers to gaining a foothold and remaining in the market long-term.
+**New Entrant Threat---High.**The threat of new entrants in any SaaS-related market is high because the ease of establishing infrastructure and product is low. This is true despite barriers to gaining a foothold and remaining in the market long-term.
 
-**Supplier Bargaining Power.**** Low**. Suppliers such as infrastructure providers have limited bargaining power due to the presence of many infrastructure and platform providers that have commoditized storage, computers, databases, and other services. Supplier costs are a small proportion of any SaaS company's expenses.
+**Supplier Bargaining Power---Low**. Suppliers such as infrastructure providers have limited bargaining power due to the presence of many infrastructure and platform providers that have commoditized storage, computers, databases, and other services. Supplier costs are a small proportion of any SaaS company's expenses.
 
-**Buyer Bargaining Power.**** Very High.** The competitive nature of SaaS markets results in companies giving significant information to the customer in the form of pre-sales information, free trials, and low-commitment, monthly rollover contracts. To succeed, Verkilo must establish brand loyalty and drive long-term value for the customer.
+**Buyer Bargaining Power---Very High.** The competitive nature of SaaS markets results in companies giving significant information to the customer in the form of pre-sales information, free trials, and low-commitment, monthly rollover contracts. To succeed, Verkilo must establish brand loyalty and drive long-term value for the customer.
 
-**Substitute Product Threat / Competitive rivalry.**** Very High.** SaaS companies like Verkilo live and die by product differentiation, which creates fierce competitive rivalry. We focus on competition separately due to the need to differentiate.
+**Substitute Product Threat / Competitive rivalry---Very High.** SaaS companies like Verkilo live and die by product differentiation, which creates fierce competitive rivalry. We focus on competition separately due to the need to differentiate.
 
 ## Competition
 

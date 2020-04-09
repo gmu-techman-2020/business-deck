@@ -1,8 +1,7 @@
 # Financials
 
-Verkilo seeks  $2 Million in Seed funding for 10 percent equity. All
-investors are offered equity in the firm. Verkilo will invest the  $2
-Million to fund product development, marketing, operational expenses,
+Verkilo seeks $SEED-AMOUNT in Seed funding for $STAKE equity. All
+investors are offered equity in the firm. Verkilo will invest the $SEED-AMOUNT to fund product development, marketing, operational expenses,
 execution of teaming/business agreements, and customer support. Our plan
 anticipates delivering to market in the first year. As we progress into
 year 2 and beyond, our revenue from sales will cover our operational and
@@ -13,8 +12,7 @@ Year 2, with an EBIT of TBD.
 
 To achieve this growth, Verkilo seeks funding via an equity
 placement to make investments in a variety of areas and fund cash flow
-requirements for the next 24 months of operation. The Company is seeking
- $2 million to finance these activities.
+requirements for the next 24 months of operation. The Company seeks $SEED-AMOUNT to finance these activities.
 
 Table: Fundraising Rounds
 

@@ -12,7 +12,7 @@ Our service is comprised of the eight components listed below. Each component pr
 
 #### Composer (JavaScript Front End).
 
-The user interface (UI) is a cross-platform application written in Node.JS, leveraging React, Redux, and other related libraries. The web application provides a single code base for the other platforms written entirely in JavaScript. We provide cross-platform support for mobile (specifically Android and iOS) devices via React Native. We provide desktop support via Electron. In addition, utilizing an integrated plugin to Microsoft Word will provide support to all the development spaces for authors and editors alike.
+The user interface (UI) is a cross-platform application written in Node.JS, leveraging React, Redux, and other related libraries. The web application provides a single code base for the other platforms written entirely in JavaScript. We provide cross-platform support for mobile (specifically Android and iOS) devices via React Native. We provide desktop support via Electron. We will create a Microsoft Word plugin to provide support for those who prefer to use Word.
 
 This UI provides a rich-text editor that can be used for composing, editing, and commenting on the book project, leveraging UTF-8 for multi-language support with multiple users able to collaborate in real time. Author/editor interactions are managed on platform, with active-push notifications. Editor-availability calendar is managed in the composer.
 
