@@ -1,6 +1,6 @@
 # Financials
 
-Verkilo seeks $SEED-AMOUNT in Seed funding for $STAKE equity. All
+Verkilo seeks $1.2 million in seed money for 18% in equity. All
 investors are offered equity in the firm. Verkilo will invest the $SEED-AMOUNT to fund product development, marketing, operational expenses,
 execution of teaming/business agreements, and customer support. Our plan
 anticipates delivering to market in the first year. As we progress into

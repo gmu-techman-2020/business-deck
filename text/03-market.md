@@ -39,35 +39,35 @@ To measure the market landscape, we leverage Gartner's methodology to quantitati
 2. **Intelligent Matchmaking.** Advances machine learning in automating the identification and collaboration of book-publishing professionals
 3. **Professional Final Product.** Delivers a final product that is indistinguishable from traditionally published products
 4. **Learning Community.** Draws self-published authors together to enhance the writing community and provide fine literature
-5. 
+5. **User Experience.** Overall experience using the product, including how easy or pleasing it is to use.
 
 The table below lists the top products in the self-publishing market that support content creation, revision, publication, or community. TBD- Appendix explaining why we scored each
 
 \newpage
-Table: Completeness of Competitors' Vision & Frictionless User Experience
+Table: Assessment of Completeness of Competitors' Vision
 
 ----------------------------------------------------------------------------------
-Product                        Manage   Match   Output   Com.   Index        UX
+Product                        Manage   Match   Output   Com.    UX        Index
 ----------------------------- -------- ------- -------- ------ ---------  --------
-20Books to 50K                    1       1       1        5       1        3
+20Books to 50K                    1       1       1        5       3          ??
 
-Freelance Writer's Den            1       1       1        3      1.5       1
+Freelance Writer's Den            1       1       1        3       1          ??
 
-Granthika                         4       1       2        2      2.3       1
+Granthika                         4       1       2        2       3          ??
 
-Google Docs                       3       1       2        2       2        3
+Google Docs                       3       1       2        2       3          ??
 
-Leanpub                           4       1       2        2      2.3       3
+Leanpub                           4       1       2        2       3          ??
 
-Microsoft Word                    3       1       2        2       2        3
+Microsoft Word                    3       1       2        2       3          ??
 
-Reedsy                            1       3       1        3       2        4
+Reedsy                            1       3       1        3       4          ??
 
-Scrivener                         4       1       2        2      2.3       1
+Scrivener                         4       1       2        2       2          ??
 
-Upwork / Fiver, etc.              1       2       1        2      1.5       1
+Upwork / Fiver, etc.              1       2       1        2       3          ??
 
-Vellum                            1       1       4        2       2        1
+Vellum                            1       1       4        2       1          ??
 
-Verkilo                         **5**   **5**    **5**   **5**   **5**     **3**
+Verkilo                         **5**   **5**    **5**   **5**   **3**     **X**
 ----------------------------------------------------------------------------------
