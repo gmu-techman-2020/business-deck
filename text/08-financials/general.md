@@ -1,4 +1,5 @@
-### General & Administrative Expenses
+\newpage
+#### General & Administrative Expenses
 
 Table: G&A Expenses Estimate
 
@@ -12,10 +13,16 @@ Legal Fees                        $10,000 Legal fees include ensuring we have ap
 Outsourced Accounting             $30,000 CLA LLP to provide outsourced accounting services, to
                                           include the CFO position
 
-General Liability Insurance        $5,000 Broad insurance policy providing liability insurance
+General Liability Insurance        $4,800 Broad insurance policy providing liability insurance
                                           for general business risks
 
-Facilities                           $-0- Core management and development team will work off-site (at home)
+Internal Business Apps             $1,800 Broad insurance policy providing liability insurance
+                                          for general business risks
 
-Total:                           $190,000
+Computer Equipment                 $7,500 Capital expense for new computer equipment
+
+Internet & Phone                   $3,600 Internet and phone service for management team
+                                          and full-time employees.
+
+Total:                            $57,700
 ---------------------------------------------------------------------------------------

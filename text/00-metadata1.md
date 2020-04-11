@@ -45,6 +45,7 @@ identifier: # Ebook
 credits:
   # - "Cover Design: Ben Wilson"
   # - "Cover Image: Martin420 https://merovx.io/2WceXAL (CC BY-SA 4.0)"
+  - "Formatting: This document was formatted using Verkilo's prototype Formatter"
   - "Editor: Cynthia Shepp"
 
 country: Printed in the United States of America

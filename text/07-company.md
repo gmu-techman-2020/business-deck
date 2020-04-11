@@ -12,6 +12,7 @@ Bryan Birchfield has had an extensive engineering career with a wealth of experi
 
 Robert Koprowski is a senior IT solutions architect, systems administrator, and cybersecurity professional supporting various federal government clients. His 12 years of experience is diversified between migration, DevSecOps, and mobile application security within the cloud-computing industry for Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. His passion for research and development (R&D) in machine learning, artificial intelligence and delivering prototype programs is what drives him. Mr. Koprowski's expertise aligns well with bringing innovation and speed to market for Verkilo.
 
+\newpage
 #### Benjamin Wilson (Founder, CEO).
 
 Ben Wilson is a senior government project manager. He has 17 years' experience in the technology field supporting efforts in software development, hardware, and organizational change management. He is the founding board president of the Accessible Community, a 503(c) nonprofit startup focused on improving access to small businesses, community organizations, and the surrounding communities for people with disabilities. As an aspiring self-published author, he is sensitive to the needs of the target audience.

@@ -34,13 +34,13 @@ We will use Amazon’s SageMaker Studio services to process over fifty (50) indu
 
 Verkilo leverages a platform business model by bringing two different market segments together. Our roadmap focuses on attracting both segments to the platform with the goal of generating revenue principally via the editor segment.
 
-**Phase 1 - Composer** involves building the composer capabilities and building out the infrastructure. During this phase, we will be focusing more on the author than the editor to start adding editable data to the platform. Early adopters will receive concierge scheduling by the team while we build out the automated matchmaking & scheduling.
+**Phase 1---Composer** involves building the composer capabilities and building out the infrastructure. During this phase, we will be focusing more on the author than the editor to start adding editable data to the platform. Early adopters will receive concierge scheduling by the team while we build out the automated matchmaking & scheduling.
 
-**Phase 2 - Matchmaker** involves delivering the automated matchmaking capability. We pilot the capability initially, replacing the concierge scheduling as we gain confidence in the automation's ability to schedule reliably.
+**Phase 2---Matchmaker** involves delivering the automated matchmaking capability. We pilot the capability initially, replacing the concierge scheduling as we gain confidence in the automation's ability to schedule reliably.
 
-**Phase 3 - Scale** expands the offering to a larger audience.
+**Phase 3---Scale** expands the offering to a larger audience.
 
-**Phase 4 – Exit** involves seeking acquisition by Amazon.
+**Phase 4---Exit** involves seeking acquisition by Amazon.
 
 ## Key Activities
 

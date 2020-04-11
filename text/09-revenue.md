@@ -1,4 +1,4 @@
-## Revenue Streams
+## Revenue Estimates
 
 Verkilo will build revenues and profits from the following sources:
 
@@ -10,7 +10,7 @@ Verkilo will build revenues and profits from the following sources:
 - **User Subscription.** Verkilo charges a nominal monthly user
     subscription fee. The subscription drives metrics collection.
 
-Table: Editor Pricing (per Book)
+Table: Weighted Editor Pricing
 
 --------------------------------------------------------------------------------
 Edit type                           Per Word       Weighting               Total
@@ -57,7 +57,7 @@ Per User                       $7/mo    $50.00
 -   A manuscript will probably go through multiple edit rounds, with the
     assumed probability reflected in the estimate.
 
-### Revenue Estimates
+#### Revenue Estimates
 
 Table: Five-Year Sales Forecast
 

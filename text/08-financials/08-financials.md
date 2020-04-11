@@ -1,6 +1,6 @@
 # Financials
 
-Verkilo seeks $1.2 million in seed money for 18% in equity. All
+Verkilo seeks $1.2 million in seed money for 20% in equity. All
 investors are offered equity in the firm. Verkilo will invest the $1.2 million to fund product development, marketing, operational expenses,
 execution of teaming/business agreements, and customer support. Our plan
 anticipates delivering to market in the first year. As we progress into
@@ -10,22 +10,19 @@ Year 3, with an EBIT of $77,350.
 
 ## Fundraising
 
-To achieve this growth, Verkilo seeks funding via an equity
-placement to make investments in a variety of areas and fund cash flow
-requirements for the next 24 months of operation. The Company seeks $1.2 million to finance these activities.
+To achieve this growth, Verkilo seeks funding via an equity placement to make investments in a variety of areas and fund cash flow requirements for the next 36 months of operation. The Company seeks $1.2 million to finance these activities.
 
 Table: Fundraising Rounds
 
 --------------------------------------------------------------------------------------
-Round        Amount   Status    Purpose
+Round           Amount  Status   Purpose
 ------------ --------- --------- ------------------------------------------------------
-self             $300K Planning  Founders investment
+Self             $300K Planning  Founders investment
 
 Seed           $1,200K Seeking   Product/Market fit, Development, Early Market Growth
 
 Series A           TBD           Scale, pending early exit opportunity.
 
-IPO / Exit    $20,000K
 --------------------------------------------------------------------------------------
 
 \newpage
@@ -40,17 +37,17 @@ Expense Area                      Amount Description
 --------------------------- ------------ -------------------------------------------------
 General & Administrative         $57,700 Subset of the company's operating expenses
 
-Marketing                       $471,000 In-person and virtual marketing to attract
+Marketing                       $131,000 In-person and virtual marketing to attract
                                          platform target audience
 
-Cost of Operations               $31,100 Expected platform infrastructure costs
+Operations                       $39,100 Expected platform infrastructure costs
 
-Product Development             $130,000 Salary, licenses and expenses needed to establish
+Product Development             $471,500 Salary, licenses and expenses needed to establish
                                          the platform
 
 Salaries & Related Expenses     $323,800 Management team salary & benefits
 
-Total:                        $1,024,000
+Total:                        $1,023,100
 ------------------------------------------------------------------------------------------
 
 

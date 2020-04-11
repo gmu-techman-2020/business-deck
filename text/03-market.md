@@ -33,7 +33,7 @@ Our market landscape analysis shows a diverse market of products and services th
 
 To measure the market landscape, we leverage Gartner's methodology to quantitatively assess the market landscape. [@gartner_magic_nodate] Verkilo views four criteria essential in defining a complete vision for a self-publisher's platform. We measured each on a 5-point Likert scale and averaged the result results to get a vision index.
 
-### Vision Criteria for a Self-Publishers Platform
+#### Vision Criteria for a Self-Publishers Platform
 
 1. **Complex Document Project Management.** Enables the self-published author to manage complex and interrelated documents (an entire fiction series or milieu for example)
 2. **Intelligent Matchmaking.** Advances machine learning in automating the identification and collaboration of book-publishing professionals

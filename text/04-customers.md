@@ -14,7 +14,7 @@ Verkilo's customer base falls into the following major segments:
 
 ## Customer Engagement
 
-### Awareness
+#### Awareness
 
 Verkilo seeks to acquire customers via the following means:
 
@@ -25,18 +25,18 @@ Verkilo seeks to acquire customers via the following means:
 - **User Recommendations.** We incentivize our customers by giving them three subscription-free months for every new customer they recruit on platform who pays a minimum of three months.
 - **Seven-Day Free Sign-up.** We conform to the SaaS market norm of providing no-commitment signups by offering a 7-day free signup that will roll over to a monthly subscription.
 
-### Evaluation & Delivery
+#### Evaluation & Delivery
 
 Verkilo delivers its value proposition to its customers via:
 
 - **Application Stores.** Verkilo will offer free downloads of its product accessible via the customer's preferred platform's app store (e.g. Apple Store, Microsoft Store, Google Play).
 - **Verkilo Website.** Verkilo enables free downloads of its product directly from the website. It will also have a browser-based implementation allowing a user to work directly in their preferred browser.
 
-### Purchase
+#### Purchase
 
 Verkilo's customers will purchase subscriptions through the Verkilo website.
 
-### After-Sales / Customer Relationships
+#### After-Sales / Customer Relationships
 
 Verkilo is a platform that seeks to establish a long-term indirect relationship with its customer segments. We seek to establish and maintain customer relationships via the following:
 

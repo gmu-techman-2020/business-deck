@@ -3,52 +3,7 @@
 
 # Appendix
 
-## Professional Matchmaking Traits
-
-The following traits suggest the traits that would be used by the
-machine learning matchmaker to
-
-### User Traits
-
-  Trait     Description
-  --------- ------------------------------------------------------------------
-  Ranking   The net promoter score for the user based on past collaborations
-
-### Manuscript Traits
-
-  Trait             Description
-  ----------------- ------------------------------------------------------------------------------------------
-  Genre             Picklist of Target genre for the work
-  Length            Type of manuscript, short, medium, long, derived from the planned length
-  Target Audience   Basic demographic of the manuscript's target audience (Child, Youth, Young Adult, Adult)
-  Planned length    Planned length of work, identified by the author
-  Actual length     Actual length of work based on manuscript wordcount
-  Progress          Percentage of completion
-  State             Picklist of what
-  Version
-  Deadline          When the author wants to
-
-## Estimated for Infrastructure Design
-
-Summary -
-
-High level design principles -
-
-Tables / Diagrams
-
-![](media/image3.png){width="6.5in" height="4.847222222222222in"}
-
-##  Estimated for Application Software Development
-
-Summary -
-
-High Level Design Principles
-
-## Application Design Layout
-
-Image of Generic Web / Mobile Interfaces with Verkilo Logos
-
-## Projected Work Plan Details
+<!-- ## Projected Work Plan Details
 
 Table of Detailed Schedule (or Use MS Project to Map Overlap)
 
@@ -60,30 +15,18 @@ Table of Detailed Schedule (or Use MS Project to Map Overlap)
 -   Architecture / Software Integration
 -   Mobile Application Development
 -   User Interface / User Experience (UI/UX) Testing
--   Release Schedule
+-   Release Schedule -->
 
-## Customer Support Plan
 
-The Help Desk objective is to deliver support for all Verkilo users and
-provide high-quality training for the IT Help Desk staff. Can be made
-into Table
-
--   Support Channels
--   Self-Help
--   Community Blog
--   Help Bots
--   Live Chat (AI-Enabled)
--   Social Media
-
-## Product / Market Research
+<!-- ## Product / Market Research
 
 The analysis of collected product interest and market penetration data
 collected through the Verkilo.com website and Social Media platforms
 supporting Verkilo's claims for business investment and growth
 potential. (Tables / Figures / Graphs of Analysis) Below figures on
-Product / Market Research were collected from Statista.com.
+Product / Market Research were collected from Statista.com. -->
 
-## Market Landscape Methodology
+<!-- ## Market Landscape Methodology
 
 A market landscape quadrant provides a graphical competitive positioning
 of four types of technology providers, in markets where growth is high
@@ -99,9 +42,9 @@ and provider differentiation is distinct:
     unfocused and do not out-innovate or outperform others.
 
 -   **Challengers** execute well today or may dominate a large segment,
-    but do not demonstrate an understanding of market direction.
+    but do not demonstrate an understanding of market direction. -->
 
-## Verkilo Valuation Model
+<!-- ## Verkilo Valuation Model
 
 Verkilo used the Venture Capital method to identify its market valuation
 after Seed investment. The Venture Capital method allows investors to
@@ -120,9 +63,9 @@ Assumptions
 -   25 percent dilution at Series-A, based on common venture capital
     estimates
 
-> TBD Formula
+> TBD Formula -->
 
-
+<!--
 ## Financial Workbooks for Verkilo Five (5) Year Projections
 
 Table: Sales Year 1-5
@@ -215,7 +158,7 @@ Table: Sales Year 1-5
   Jira Confluence                                        \$1,500
   Outsourced Dev Team                                    \$315,000
   **Total Cost of Development (Annually)**               **\$540,100**
-  ------------------------------------------------------ ---------------
+  ------------------------------------------------------ --------------- -->
 <!--
 ## References
 
