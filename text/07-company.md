@@ -10,7 +10,7 @@ Bryan Birchfield has had an extensive engineering career with a wealth of experi
 
 #### Robert Koprowski (Founder, CTO).
 
-Robert Koprowski is a senior IT solutions architect, systems administrator, and cybersecurity professional supporting various federal government clients. His 12 years of experience is diversified between migration, DevSecOps, and mobile application security within the cloud-computing industry for Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. His passion for research and development (R&D) and delivering prototype programs is what drives him. Mr. Koprowski's expertise aligns well with bringing innovation to any startup.
+Robert Koprowski is a senior IT solutions architect, systems administrator, and cybersecurity professional supporting various federal government clients. His 12 years of experience is diversified between migration, DevSecOps, and mobile application security within the cloud-computing industry for Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. His passion for research and development (R&D) in machine learning, artificial intelligence and delivering prototype programs is what drives him. Mr. Koprowski's expertise aligns well with bringing innovation and speed to market for Verkilo.
 
 #### Benjamin Wilson (Founder, CEO).
 
@@ -75,7 +75,7 @@ Table: Summary of Business Risks
 #### Short-Term Competition Risk---High
 - Goal: Proving we are differentiated from others in the market space.
 - Situation: There are many competitors that are inefficient at serving our target audience, but there is some differentiation between them.
-- Mitigation: With sales in place, establish brand perception and seek a patent on our matchmaking technology.
+- Mitigation: With sales in place, establish brand perception and seek a patent on our matchmaking technology, based on recommendation from patent attorney.
 
 #### Long-Term Competition Risk---High
 - Goal: Proving defensibility, or that we can position ourselves to compete successfully against copycats.
@@ -85,7 +85,7 @@ Table: Summary of Business Risks
 #### Intellectual Property Risk---High
 - Goal: Proving we have protected intellectual property and are not at risk of litigation.
 - Situation: We did a cursory patent and trademark evaluation but are not legally competent to do a proper patent search.
-- Mitigation: Engage a patent law firm to guide us through the patent portion. Trademark Verkilo.
+- Mitigation: Engage a patent law firm to guide us through the patent portion if we opt for patent. Trademark Verkilo.
 
 #### Market Risk---Low
 
