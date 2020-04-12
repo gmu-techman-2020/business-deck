@@ -37,18 +37,20 @@ The following list covers each of Polovets' suggested risk areas including our s
 
 Table: Summary of Business Risks
 
-| Category | Risk Level | Mitigation |
-| --- | :---: | --- |
-|  Product/Market Fit |  Very High | Prototype with early adopters |
-|  Product Quality | Very High | Prototype with early adopters |
-|  Sales | Very High | Seek sales/marketing advisor or co-founder |
-|  Recruiting | High | Seek recruiting advisor or co-founder |
-|  Short-Term Competition | High | Brand promotion, patent |
-|  Long-Term Competition | High | Brand promotion |
-|  Intellectual Property | High | Trademark brand; hire patent attorney |
-|  Market | Low | Conduct bottom-up analysis of market |
-|  Team | Low | None, minimal risk |
-|  Funding | Low | Seeking seed funding |
+-------------------------------------------------------------------------------
+Category                Risk Level   Mitigation
+---------------------- ------------  ------------------------------------------
+Product/Market Fit      Very High    Prototype with early adopters
+Product Quality         Very High    Prototype with early adopters
+Sales                   Very High    Seek sales/marketing advisor or co-founder
+Recruiting                 High      Seek recruiting advisor or co-founder
+Short-Term Competition     High      Brand promotion, patent
+Long-Term Competition      High      Brand promotion
+Intellectual Property      High      Trademark brand; hire patent attorney
+Market                     Low       Conduct bottom-up analysis of market
+Team                       Low       None, minimal risk
+Funding                    Low       Seeking seed funding
+-------------------------------------------------------------------------------
 
 #### Product/Market Fit Risk---Very High
 

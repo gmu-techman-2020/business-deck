@@ -6,7 +6,7 @@ author:     Team Verkilo
 authors:
   - Brian Birchfield
   - Robert Koprowski
-  - Ben Wilson
+  - Benjamin Wilson
 header-includes:
   - \newcommand{\hideFromPandoc}[1]{#1}
   - \usepackage{pdflscape}

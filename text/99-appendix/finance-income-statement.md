@@ -2,10 +2,21 @@
   \section{Income Statement \& Balance Sheet}
   \setstretch{0.9}
   \begin{center}
-    \begin{longtable}[\textwidth]{@{}p{10cm}rrrrr@{}}
+    \begin{longtable}[]{@{}lrrrrr@{}}
       \caption{Income Statement Year 1-5}\tabularnewline
-      \toprule
-      \textbf{Revenue} & 2020 & 2021 & 2022 & 2023 & 2024 \\
+      \begin{minipage}[b]{0.35\columnwidth}\raggedright
+      \textbf{Revenue}\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2020\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2021\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2022\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2023\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2024\strut
+      \end{minipage}\tabularnewline
       \midrule
       \hspace{3mm} Platform Subscriber & 142,849 & 418,846 & 717,195 & 1,287,980 & 2,313,027 \\
       \hspace{3mm} Book Edits & 83,727 & 265,357 & 567,262 & 1,222,680 & 2,195,730 \\
@@ -46,10 +57,21 @@
       \bottomrule
     \end{longtable}
     \setstretch{0.89}
-    \begin{longtable}[\textwidth]{@{}p{10cm}rrrrr@{}}
-      \caption{Balance Sheet Year 1-5}\tabularnewline
-      \toprule
-      \textbf{Assets} & 2020 & 2021 & 2022 & 2023 & 2024 \\
+    \begin{longtable}[]{@{}lrrrrr@{}}
+      \caption{Income Statement Year 1-5}\tabularnewline
+      \begin{minipage}[b]{0.35\columnwidth}\raggedright
+      \textbf{Assets}\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2020\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2021\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2022\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2023\strut
+      \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
+      2024\strut
+      \end{minipage}\tabularnewline
       \midrule
       \hspace{0mm} Current Assets & & & & & \\
       \hspace{3mm} Cash & 703,393 & 206,981 & 281,255 & 799,813 & 2,338,188 \\

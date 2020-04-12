@@ -19,7 +19,8 @@ Round           Amount  Status   Purpose
 ------------ --------- --------- ------------------------------------------------------
 Self             $300K Planning  Founders investment
 
-Seed           $1,200K Seeking   Product/Market fit, Development, Early Market Growth
+Seed           $1,200K Seeking   Product/Market fit, Development,
+                                 Early Market Growth
 
 Series A           TBD           Scale, pending early exit opportunity.
 

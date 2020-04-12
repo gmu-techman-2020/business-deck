@@ -1,5 +1,5 @@
-# Executive Summary
-
+\begin{figure}[hbt!]
+\chapter{Executive Summary}
 \setstretch{1.55}
 Traditional publishing offers a professional workflow that helps authors turn their creations into publishable products. The publishing field is competitive, resulting in a high author-rejection rate. The self-publishing market comprises one-third of the US publishing market, representing \$9.1 billion of the \$26 billion in gross US annual book revenue.
 
@@ -9,6 +9,5 @@ Verkilo seeks to streamline the self-published author workflow through a two-sid
 
 No unified, two-sided platform exists in the publishing industry that offers automated author/editor pairing with content creation and automated formatting. Most content creation and editing occur in standalone products like Microsoft Word and Google Docs. Existing pairing platforms like Reedsy rely on manual pairing. Other products in the industry focus on niche aspects such as formatting.
 
-We seek \$1.2 million in seed money for 20% in equity so we can beat rivals to market and establish a strong brand presence. Verkilo will use seed funding to finance its first steps, including refined market research and product development. With seed funding, Verkilo can determine what its final products will be and who its target demographic is. We will use seed funding to employ a founding team to complete these tasks. We estimate the rate of return for this investment in Year 5 will be \$13.2 million.
-
-\setstretch{1.6}
+We seek \$1.2 million in seed money for 20\% in equity so we can beat rivals to market and establish a strong brand presence. Verkilo will use seed funding to finance its first steps, including refined market research and product development. With seed funding, Verkilo can determine what its final products will be and who its target demographic is. We will use seed funding to employ a founding team to complete these tasks. We estimate the rate of return for this investment in Year 5 will be \$13.2 million.
+\end{figure}
