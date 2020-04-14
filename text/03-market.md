@@ -5,17 +5,26 @@ Verkilo initially targets US self-published authors and editors. As discussed be
 
 Verkilo initially plans to target the highly valuable US self-publishing community. The US self-publisher market is one-third of the total US published market (itself a quarter of the global market) and is displacing traditional publishing.  The overall market shows considerable growth for the foreseeable future, with estimates grossing between $9 and $28 billion in annual revenue by 2025 for US self-publishers. Our market landscape analysis reflects a diverse market of products and services currently available that compete with Verkilo’s vision for attention in the self-publisher market. However, our quantitative assessment suggests none are competing against our vision of a complete vertical integration of software product offering for hassle-free self-publishing managed through machine learning
 
+\newpage
 ## Market Size
 
 The US book-publishing industry generated $28 billion in annual revenue in 2018. [@statista_book_2020] This represents 23% of the $119 billion in global annual revenue. [@noauthor_ibisworld_nodate] US self-published authors represent 35% of the US market, valued at $7.8 billion.
 
-Bowker, the US registrar for ISBNs (International Standard Book Number), reported 1.6 million books published by self-published authors in 2018, including 490,000 new self-published titles released in 2018 with an assigned ISBN. [@bowker_news_nodate] From 2010 to 2018, the number of self-published book titles increased an average of 30% each year. [@bowker_self-publishing_2019] As the overall US market publishing market grew at a slower pace, this increase represents a displacement of traditional publishing by self-publishers. Forbes reported there were three self-published books for every traditionally published book as of 2017. [@pofeldt_new_nodate] Eighty-five percent of self-published books with ISBNs from 2013 to 2018—or 1.4 million titles—were distributed via Amazon's Kindle Direct Published Publishing (KDP), which replaced Amazon's CreateSpace. [@bowker_self-publishing_2019]
+Bowker, the US registrar for ISBNs (International Standard Book Number), reported 1.6 million books published by self-published authors in 2018, including 490,000 new self-published titles released in 2018 with an assigned ISBN.[^bowker-warning] [@bowker_news_nodate] From 2010 to 2018, the number of self-published book titles increased an average of 30% each year. [@bowker_self-publishing_2019] As the overall US market publishing market grew at a slower pace, this increase represents a displacement of traditional publishing by self-publishers. Forbes reported there were three self-published books for every traditionally published book as of 2017. [@pofeldt_new_nodate] Eighty-five percent of self-published books with ISBNs from 2013 to 2018—or 1.4 million titles—were distributed via Amazon's Kindle Direct Published Publishing (KDP), which replaced Amazon's CreateSpace. [@bowker_self-publishing_2019]
 
-Bowker warned many books are now distributed via Amazon's Kindle and do not have ISBNs, which means the total number of self-published books exceeds the Bowker reported number. [@bowker_self-publishing_2019] We limited our analysis to verifiable numbers provided by Bowker.
+![US Self-Published Books with ISBNs 2013-2018](media/book-sales.eps)
 
-Technavio, a leading global technology research and advisory company, estimates the global publishing market size will grow by $23 billion to $142 billion between 2020-2024; a 19% percent increase over the next four years or 6% percent each year. [@technavio_publishing_nodate] The US market should grow at a similar pace to $33 billion. If self-publishing grows at the same rate, its market size may reach $7.8 billion. If it grows at its 30% percent historic rate, its 2024 revenue may reach $27.9 billion: 85% of the total US publishing market. At 6% percent annual growth from Bowker's 2018 numbers, we estimate a total of 3.8 million self-published books will be released between 2020 and 2025. [@bowker_self-publishing_2019]
+[^bowker-warning]: Bowker warned that many books in 2018 were distributed via Amazon's Kindle without ISBNs, which means the total number of self-published books exceeds the Bowker reported number. [@bowker_self-publishing_2019] We limited our analysis to verifiable numbers provided by Bowker.
 
-Figure 1: Forecasted Annual Growth of Self-Published Market 2020-2024
+
+Technavio, a leading global technology research and advisory company, estimates the global publishing market size will grow by $23 billion to $142 billion between 2020-2024; a 19% increase over the next four years or 6% each year. [@technavio_publishing_nodate] The US market should grow at a similar pace to $33 billion. If US self-publishing grows at the same rate (instead of its historic 30% rate), its market size may reach $11 billion by 2024. At 6% annual growth from Bowker's 2018 numbers, we estimate a total of 3.8 million self-published books will be released between 2020 and 2025. [@bowker_self-publishing_2019]
+
+![Forecasted Annual Growth of US Self-Published Market 2020-2024](media/market-growth.eps)
+
+#### What We Need to Enter this Market
+
+We seek $1.2 million in seed money for 20% in equity so we can beat rivals to market and establish a strong brand presence. Verkilo will use seed funding to finance its first steps, including refined market research and product development. With seed funding, Verkilo can determine what its final products will be and who its target demographic is. We will use seed funding to employ a founding team to complete these tasks.
+We estimate the return to investors in Year 5 will be $13.2 million. This is an 11x return on the initial $1.2 million investment. This equates to a 62% annual return on investment, each year, over 5 years.
 
 ## Market Landscape
 
@@ -41,33 +50,34 @@ To measure the market landscape, we leverage Gartner's methodology to quantitati
 4. **Learning Community.** Draws self-published authors together to enhance the writing community and provide fine literature
 5. **User Experience.** Overall experience using the product, including how easy or pleasing it is to use.
 
-The table below lists the top products in the self-publishing market that support content creation, revision, publication, or community. TBD- Appendix explaining why we scored each
+The table below lists the top products in the self-publishing market that support content creation, revision, publication, or community.
 
 \newpage
-Table: Assessment of Completeness of Competitors' Vision
 
-----------------------------------------------------------------------------------
-Product                        Manage   Match   Output   Com.    UX        Index
------------------------------ -------- ------- -------- ------ ---------  --------
-20Books to 50K                    1       1       1        5       3          ??
+Table: Assessment of Completeness of Vision
 
-Freelance Writer's Den            1       1       1        3       1          ??
+-----------------------------------------------------------------------------------
+Product                        Manage   Match   Output   Com.    UX         Index
+----------------------------- -------- ------- -------- ------ ---------  ---------
+20Books to 50K                    1       1       1        5       3          2.2
 
-Granthika                         4       1       2        2       3          ??
+Freelance Writer's Den            1       1       1        3       1          1.4
 
-Google Docs                       3       1       2        2       3          ??
+Granthika                         4       1       2        2       3          2.4
 
-Leanpub                           4       1       2        2       3          ??
+Google Docs                       3       1       2        2       3          2.2
 
-Microsoft Word                    3       1       2        2       3          ??
+Leanpub                           4       1       2        2       3          2.4
 
-Reedsy                            1       3       1        3       4          ??
+Microsoft Word                    3       1       2        2       3          2.2
 
-Scrivener                         4       1       2        2       2          ??
+Reedsy                            1       3       1        3       4          2.4
 
-Upwork / Fiver, etc.              1       2       1        2       3          ??
+Scrivener                         4       1       2        2       2          2.2
 
-Vellum                            1       1       4        2       1          ??
+Upwork / Fiver, etc.              1       2       1        2       3          1.8
 
-Verkilo                         **5**   **5**    **5**   **5**   **3**     **X**
-----------------------------------------------------------------------------------
+Vellum                            1       1       4        2       1          1.8
+
+Verkilo                         **5**   **5**    **5**   **5**   **3**     **4.6**
+-----------------------------------------------------------------------------------

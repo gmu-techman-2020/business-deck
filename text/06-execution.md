@@ -17,7 +17,9 @@ These various forms of UI provide a rich-text editor that can be used for compos
 
 **Importer (Service Backend).** This service converts uploaded RTF or DOCX file types into our proprietary format for storage. The process leverages Pandoc and Docker for processing. We virus-scan these uploaded documents as a part of our internal pipeline security. As a milestone event, we plan to implement and support a voice-to-text conversion of uploaded MP3/4 and WAV using AWS Transcribe to provide convenience for self-publishers to record thoughts and storytelling. Inherently, this will also assist visually impaired users with any difficulties they may otherwise encounter by self-publishing through standard means of writing and/or typing their work. Additional support for other services like Amazon Textract (Text-Recognition), Amazon Translate (Language Translation), and Amazon Polly (Text-to-Speech) so an authors and editors can dynamically work across all boundaries of the human senses.
 
-**Exporter (Service Backend).** This service converts the stored work into publication-ready formats (PDF, EPUB, DOCX, RTF) and stores it on the author’s choice of local or cloud-based storage locations (i.e., Dropbox, iCloud, Google Drive, OneDrive, Box, S3). This conversion leverages Pandoc and LaTeX formatters processed using Lambda and Docker-based processing containers.
+**Exporter (Service Backend).** This service converts the stored work into publication-ready formats (PDF, EPUB, DOCX, RTF) and stores it on the author’s choice of local or cloud-based storage locations (i.e., Dropbox, iCloud, Google Drive, OneDrive, Box, S3). This conversion leverages Pandoc and LaTeX formatters processed using Lambda and Docker-based processing containers.[^exported-by-verkilo]
+
+[^exported-by-verkilo]: Note: We used a prototype of Verkilo's Exporter to create the document you are now reading.
 
 **Account Management (Security Backend).** User accounts will be managed by AWS Cognito, a service that provides identity management and access control to our application. Account creation, user/group management, MFA, device management, password policies, and more will be managed through this service to provide layered security and basic account management to our users. User permissions and user rights will be managed in conjunction with a secure enclave database and AWS Cognito groups. This will allow authors and editors to have transparently different permissions and access to the same resources depending on the role they are performing.
 
@@ -42,6 +44,7 @@ Verkilo leverages a platform business model by bringing two different market seg
 
 **Phase 4---Exit** involves seeking acquisition by Amazon.
 
+\newpage{}
 ## Key Activities
 
 Verkilo will engage in the following key activities to derive value for our customers:
@@ -64,6 +67,7 @@ Verkilo will engage in the following key activities to derive value for our cust
 - **Patents / Trade Secrets.** We view our matchmaking algorithm as a trade secret rather than something patentable. This position may shift after consulting with a patent attorney.
 
 **Human.** Our core development team is key in developing our algorithm. While we start with part of the team offshore, we onshore the labor in favor of in-house developers as we gain our financial footing.
+
 
 ## Key Partners
 

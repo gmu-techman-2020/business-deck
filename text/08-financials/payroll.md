@@ -1,3 +1,4 @@
+\newpage{}
 #### Payroll Expenses
 
 Table: Payroll Expenses Estimate

@@ -1,5 +1,6 @@
 \begin{landscape}
   \section{Income Statement \& Balance Sheet}
+  \small
   \setstretch{0.9}
   \begin{center}
     \begin{longtable}[]{@{}lrrrrr@{}}
@@ -40,14 +41,6 @@
       \hspace{3mm} Income (Before Other Expenses) & \$(796,607) & \$(496,412) & \$77,530 & \$541,292 & \$1,735,193 \\
       \textbf{Other Expenses} & & & & & \\
       \midrule
-      \hspace{3mm} Amortized Start-up Expenses & - & - & - & - & - \\
-      \hspace{3mm} Depreciation & - & - & - & - & - \\
-      \hspace{3mm} Interest & & & & & \\
-      \hspace{3mm} Commercial Loan & - & - & - & - & - \\
-      \hspace{3mm} Vehicle Loans & - & - & - & - & - \\
-      \hspace{3mm} Other Bank Debt & - & - & - & - & - \\
-      \hspace{3mm} Line of Credit & - & - & - & - & - \\
-      \hspace{3mm} Bad Debt Expense & - & - & - & - & - \\
       \textbf{Total Other Expenses} & \$ -0- & \$ -0- & \$ -0- & \$ -0- & \$ -0- \\
       \textbf{Net Income Before Income Tax} & \$(796,607) & \$(496,412) & \$77,530 & \$541,292 & \$1,735,193 \\
       \hspace{3mm} NOL Carry Forward & & \$(796,607) & \$(1,293,019) & \$(1,230,995) & \$(797,961) \\
@@ -56,9 +49,10 @@
       \textbf{Net Income/Loss} & \$(796,607) & \$(496,412) & \$74,274 & \$518,558 & \$1,538,375 \\
       \bottomrule
     \end{longtable}
-    \setstretch{0.89}
+    \newpage{}
+
     \begin{longtable}[]{@{}lrrrrr@{}}
-      \caption{Income Statement Year 1-5}\tabularnewline
+      \caption{Balance Sheet Year 1-5}\tabularnewline
       \begin{minipage}[b]{0.35\columnwidth}\raggedright
       \textbf{Assets}\strut
       \end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\centering
@@ -74,40 +68,20 @@
       \end{minipage}\tabularnewline
       \midrule
       \hspace{0mm} Current Assets & & & & & \\
-      \hspace{3mm} Cash & 703,393 & 206,981 & 281,255 & 799,813 & 2,338,188 \\
-      \hspace{3mm} Accounts Receivable & - & - & - & - & - \\
-      \hspace{3mm} Inventory & - & - & - & - & - \\
-      \hspace{3mm} Prepaid Expenses & - & - & - & - & - \\
-      \hspace{3mm} Other Initial Costs & - & - & - & - & - \\
+      \hspace{3mm} Cash & \$703,393 & \$206,981 & \$281,255 & \$799,813 & \$2,338,188 \\
       \hfill \textbf{Total Current Assets} & \$703,393 & \$206,981 & \$281,255 & \$799,813 & \$2,338,188 \\
       \hspace{0mm} Fixed Assets & & & & & \\
-      \hspace{3mm} Real Estate -- Land & - & - & - & - & - \\
-      \hspace{3mm} Real Estate -- Buildings & - & - & - & - & - \\
-      \hspace{3mm} Leasehold Improvements & - & - & - & - & - \\
-      \hspace{3mm} Equipment & - & - & - & - & - \\
-      \hspace{3mm} Furniture and Fixtures & - & - & - & - & - \\
-      \hspace{3mm} Vehicles & - & - & - & - & - \\
-      \hspace{3mm} Other & - & - & - & - & - \\
       \hfill \textbf{Total Fixed Assets} & \$ -0- & \$ -0- & \$ -0- & \$ -0- & \$ -0- \\
-      \hspace{3mm} (Less Accumulated Depreciation) & \$ -0- & \$ -0- & \$ -0- & \$ -0- & \$ -0- \\
       \hspace{0mm} Total Assets & \$703,393 & \$206,980 & \$281,254 & \$799,812 & \$2,338,187 \\
       \textbf{Liabilities \& Equity} & & & & & \\
       \midrule
-      \hspace{3mm} Liabilities & & & & & \\
-      \hspace{3mm} Accounts Payable & - & - & - & - & - \\
-      \hspace{3mm} Commercial Loan Balance & - & - & - & - & - \\
-      \hspace{3mm} Commercial Mortgage Balance & - & - & - & - & - \\
-      \hspace{3mm} Credit Card Debt Balance & - & - & - & - & - \\
-      \hspace{3mm} Vehicle Loans Balance & - & - & - & - & - \\
-      \hspace{3mm} Other Bank Debt Balance & - & - & - & - & - \\
-      \hspace{3mm} Line of Credit Balance & - & - & - & - & - \\
       \hfill \textbf{Total Liabilities} & \$ -0- & \$ -0- & \$ -0- & \$ -0- & \$ -0- \\
       \textbf{Equity} & & & & & \\
       \midrule
       \hspace{3mm} Common Stock & 1,500,000 & 1,500,000 & 1,500,000 & 1,500,000 & 1,500,000 \\
-      \hspace{3mm} Retained Earnings & (796,607) & (1,293,019) & (1,218,745) & (700,187) & 838,188 \\
-      \hspace{3mm} Dividends Dispersed/Owners Draw & - & - & - & - & - \\
-      \hfill Total Equity & \$703,393 & \$206,981 & \$281,255 & \$799,813 & \$2,338,188 \\
+      \hspace{3mm} Retained Earnings & \$(796,607) & \$(1,293,019) & \$(1,218,745) & \$(700,187) & \$838,188 \\
+      \hspace{3mm} Dividends Dispersed/Owners Draw & \$ -0- & \$ -0- & \$ -0- & \$ -0- & \$ -0- \\
+      \hfill \textbf{Total Equity} & \$703,393 & \$206,981 & \$281,255 & \$799,813 & \$2,338,188 \\
       \textbf{Total Liabilities and Equity} & \$703,393 & \$206,980 & \$281,254 & \$799,812 & \$2,338,187 \\
       \bottomrule
     \end{longtable}

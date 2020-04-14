@@ -3,18 +3,15 @@
 The Help Desk objective is to deliver support for all Verkilo users and
 provide high-quality training for the IT Help Desk staff.
 
+Table: Customer Support Channels
+
 -----------------------------------------------------------------------------------------
-Category                 Description
+Support Channels         Description
 ------------------------ ----------------------------------------------------------------
-Support Channels
+Self-Help                Hosted, online documentation for the users to access
 
-Self-Help
+Community Forum          A company-moderated, hosted forum for customers to help one another
 
-Community Blog
-
-Help Bots
-
-Live Chat (AI-Enabled)
-
-Social Media
+Social Media             Company-moderated forum on popular social media platforms
+                         (e.g. Facebook, Reddit, etc.)
 -----------------------------------------------------------------------------------------

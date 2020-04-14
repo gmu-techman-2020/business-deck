@@ -1,4 +1,4 @@
-\newpage
+
 #### Operations Expenses
 
 Table: Operations Expenses Estimate

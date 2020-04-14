@@ -1,4 +1,5 @@
 \newpage
+
 #### General & Administrative Expenses
 
 Table: G&A Expenses Estimate

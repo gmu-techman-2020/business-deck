@@ -1,5 +1,5 @@
 
-## Professional Matchmaking Traits
+## Matchmaking Traits
 
 The following traits suggest the traits that would be used by the
 machine learning matchmaker to

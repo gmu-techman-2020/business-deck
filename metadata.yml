@@ -2,7 +2,7 @@
 title:      Verkilo Business Plan
 subtitle:   Helping Authors Manage Their Creativity
 institute:  George Mason University
-author:     Team Verkilo
+author:     Birchfield, Koprowski, Wilson
 authors:
   - Brian Birchfield
   - Robert Koprowski
@@ -17,6 +17,7 @@ header-includes:
       \let\End\end
     }
   - \usepackage{xcolor}
+  - \titlespacing*{\chapter}{0pt}{1cm}{1cm}
   - \usepackage{spreadtab}
   - \definecolor{red}{cmyk}{0.0, 0.56, 0.43, 0.58}
   - \definecolor{blue}{cmyk}{0.56, 0.21, 0, 0.58} # % 2F546B

@@ -1,3 +1,5 @@
+\newpage{}
+
 #### Marketing Expenses
 
 Table: Marketing Expenses Estimate

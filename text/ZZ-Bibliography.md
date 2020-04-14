@@ -1,2 +1,3 @@
-\newpage
+\newpage{}
+
 ## Bibliography

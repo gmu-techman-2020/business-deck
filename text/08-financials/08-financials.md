@@ -26,7 +26,7 @@ Series A           TBD           Scale, pending early exit opportunity.
 
 --------------------------------------------------------------------------------------
 
-\newpage
+
 ## Use of Proceeds and Funds
 
 The proceeds from this equity financing activity will be used as summarized on the table below.

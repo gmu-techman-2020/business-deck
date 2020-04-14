@@ -4,21 +4,16 @@
 
 Our management team comprises professionals with years of experience in providing cloud and software-development expertise. We are well-suited to bring Verkilo to market, though we seek additional expertise in marketing. Our team will be employed during the start-up period. We welcome expertise from our investor group that can contribute to the success of the company. We include management team skill gaps below.
 
-#### Bryan Birchfield (Founder, CMO).
-
+**Bryan Birchfield (Founder, CMO).**
 Bryan Birchfield has had an extensive engineering career with a wealth of experience as a systems engineer, solutions architect and network engineer. His experience has spanned business development, sales, product development, and engineering support teams.
 
-#### Robert Koprowski (Founder, CTO).
-
+**Robert Koprowski (Founder, CTO).**
 Robert Koprowski is a senior IT solutions architect, systems administrator, and cybersecurity professional supporting various federal government clients. His 12 years of experience is diversified between migration, DevSecOps, and mobile application security within the cloud-computing industry for Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. His passion for research and development (R&D) in machine learning, artificial intelligence and delivering prototype programs is what drives him. Mr. Koprowski's expertise aligns well with bringing innovation and speed to market for Verkilo.
 
-\newpage
-#### Benjamin Wilson (Founder, CEO).
-
+**Benjamin Wilson (Founder, CEO).**
 Ben Wilson is a senior government project manager. He has 17 years' experience in the technology field supporting efforts in software development, hardware, and organizational change management. He is the founding board president of the Accessible Community, a 503(c) nonprofit startup focused on improving access to small businesses, community organizations, and the surrounding communities for people with disabilities. As an aspiring self-published author, he is sensitive to the needs of the target audience.
 
-#### Chief Financial Officer.
-
+**Chief Financial Officer.**
 Verkilo lacks strong experience in financial planning and risk management. To mitigate this gap in expertise, we plan to outsource the entire accounting operation to CLA, LLP. CLA operates an entire business practice around offering outsourced accounting services, up to and including the CFO position, to small businesses and startups. This allows Verkilo to obtain the expertise required while keeping initial costs low.
 
 ## Company Ownership
@@ -33,7 +28,7 @@ We use Leo Polovets' startup risk management model. [@polovets_how_nodate] As an
 
 The following list covers each of Polovets' suggested risk areas including our self-evaluation and approach to reducing risk. We leverage the approach recommended by Josh Smith, who created a risk-management process and spreadsheet from Mr. Polovets' model. [@smith_lower_nodate]
 
-\newpage
+
 
 Table: Summary of Business Risks
 
@@ -41,15 +36,25 @@ Table: Summary of Business Risks
 Category                Risk Level   Mitigation
 ---------------------- ------------  ------------------------------------------
 Product/Market Fit      Very High    Prototype with early adopters
+
 Product Quality         Very High    Prototype with early adopters
+
 Sales                   Very High    Seek sales/marketing advisor or co-founder
+
 Recruiting                 High      Seek recruiting advisor or co-founder
+
 Short-Term Competition     High      Brand promotion, patent
+
 Long-Term Competition      High      Brand promotion
+
 Intellectual Property      High      Trademark brand; hire patent attorney
+
 Market                     Low       Conduct bottom-up analysis of market
+
 Team                       Low       None, minimal risk
+
 Funding                    Low       Seeking seed funding
+
 -------------------------------------------------------------------------------
 
 #### Product/Market Fit Risk---Very High
@@ -57,6 +62,8 @@ Funding                    Low       Seeking seed funding
 - Goal: Proving we are building what people want.
 - Situation: We think people will use our product based on customer surveys and interviews.
 - Mitigation: We will build our prototype in collaboration with early adopters, pivoting as needed to make fit. In this we follow in the footsteps of companies such as Google, Apple, and PayPal, who went from marginal to successful with a change of business model.
+
+\newpage{}
 
 #### Product Quality Risk---Very High
 
@@ -80,6 +87,8 @@ Funding                    Low       Seeking seed funding
 - Situation: There are many competitors that are inefficient at serving our target audience, but there is some differentiation between them.
 - Mitigation: With sales in place, establish brand perception and seek a patent on our matchmaking technology, based on recommendation from patent attorney.
 
+\newpage{}
+
 #### Long-Term Competition Risk---High
 - Goal: Proving defensibility, or that we can position ourselves to compete successfully against copycats.
 - Situation: We do not have a real competitive advantage, but we are a first mover in automated professional relationship building between authors and editors.
@@ -96,13 +105,14 @@ Funding                    Low       Seeking seed funding
 - Situation: We have conducted top-down market analysis, but not bottom-up analysis backed by experience and data.
 - Mitigation: We will continue to improve our model via bottom-up analysis and experimentation.
 
-\newpage
 
 #### Team Risk---Low
 
 - Goal: Proving we have a team that can achieve our vision.
 - Situation: Our core team has technical competence in the key areas.
 - Mitigation: None, minimal residual risk.
+
+\newpage{}
 
 #### Funding Risk---Low
 

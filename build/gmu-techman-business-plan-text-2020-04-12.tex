@@ -2,7 +2,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 
-\documentclass[10pt,openany]{book}
+\documentclass[11pt,openany]{book}
 % \usepackage[dvipsnames,svgnames*,x11names*]{xcolor}
 \usepackage[svgnames]{xcolor}
 \usepackage{titlesec}
@@ -16,7 +16,7 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
-  \setmainfont{Source Serif Pro}
+  \setmainfont{Bookerly}
   \setsansfont{Oswald}
   \setmonofont{Source Sans Pro}
 \usepackage{sectsty}
@@ -60,7 +60,7 @@
 \usepackage{hyperref}
 \hypersetup{
             pdftitle={Verkilo Business Plan},
-            pdfauthor={Team Verkilo},
+            pdfauthor={Birchfield, Koprowski, Wilson},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -134,22 +134,26 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\Large\color{Black}}
+  {}{0pt}{\Huge}
 
-% % \newcommand{\hideFromPandoc}[1]{#1}
-% % \usepackage{pdflscape}
-% % \usepackage{lscape}
-% % \usepackage{scrextend}
-% %  \let\Begin\begin \let\End\end 
-% % \usepackage{xcolor}
-% % \usepackage{spreadtab}
-% % \definecolor{red}{cmyk}{0.0, 0.56, 0.43, 0.58}
-% % \definecolor{blue}{cmyk}{0.56, 0.21, 0, 0.58}
-% % \definecolor{yellow}{cmyk}{0, 0.0, 0.56, 0.58}
-% % \definecolor{orange}{cmyk}{0, 0.34, 0.56, 0.58}
-% % \usepackage{lipsum}
-% % \setmonofont{Source Sans Pro}
-% % \usepackage{adjustbox}
-% % HEADER DESIGN
+\newcommand{\hideFromPandoc}[1]{#1}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{scrextend}
+ \let\Begin\begin \let\End\end 
+\usepackage{xcolor}
+\titlespacing*{\chapter}{0pt}{1cm}{1cm}
+\usepackage{spreadtab}
+\definecolor{red}{cmyk}{0.0, 0.56, 0.43, 0.58}
+\definecolor{blue}{cmyk}{0.56, 0.21, 0, 0.58}
+\definecolor{yellow}{cmyk}{0, 0.0, 0.56, 0.58}
+\definecolor{orange}{cmyk}{0, 0.34, 0.56, 0.58}
+\usepackage{lipsum}
+\setmonofont{Source Sans Pro}
+\usepackage{adjustbox}
+% HEADER DESIGN
 \usepackage{fancyhdr} % headers
 \pagestyle{fancy} % style for headers
 \usepackage{pifont} % for the copyright symbol
@@ -167,15 +171,10 @@
 
 \fancyhead[CO]{ \footnotesize\MakeUppercase{Verkilo Business
 Plan}  } % Odd Page, Right side
-\fancyhead[CE]{ \footnotesize\MakeUppercase{Team
-Verkilo} } % Even Page, Right side
+\fancyhead[CE]{ \footnotesize\MakeUppercase{Birchfield, Koprowski,
+Wilson} } % Even Page, Right side
 \renewcommand\headrulewidth{0pt} % for no rule line under header
 
-
-
-\titleformat{\chapter}[display]
-  {\normalfont\sffamily\Large\color{Black}}
-  {}{0pt}{\Huge}
   % \titleformat{\chapter}[display]
     % {\normalfont\sffamily\huge\bfseries\color{Black}}
     % {\chaptertitlename\ \thechapter}{20pt}{\Huge}
@@ -276,7 +275,8 @@ Verkilo} } % Even Page, Right side
 }
 \makeatother
 % /PlainFancyBreak
-
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 \begin{document}
   \sloppy % ignore problems with line overflow / underflow
   \setcounter{page}{1}
@@ -320,7 +320,7 @@ Verkilo} } % Even Page, Right side
     \line(1,0){150}
     \vspace*{0.25in}
 
-    \Large\textsf{Team Verkilo}
+    \Large\textsf{Birchfield, Koprowski, Wilson}
 
     \vspace*{\fill}
     \vspace*{\fill}
@@ -354,7 +354,7 @@ Verkilo's prototype Formatter
       \par\noindent Editor: Cynthia Shepp
   \newline
 
-  \par\noindent       \par\noindent Team Verkilo
+  \par\noindent       \par\noindent Birchfield, Koprowski, Wilson
     \newline
 
   
@@ -368,62 +368,6 @@ Verkilo's prototype Formatter
 
   % -----------------------------------------------
   % r.5 - Dedication
-      \section*{Confidentiality Statement and Legal Disclaimer}
-
-      The provisions of this plan are privileged and confidential.
-      Unauthorized reproduction or distribution of this business plan or
-      any of its contents in any form or under any circumstances without
-      prior written consent is prohibited. The Recipient is responsible
-      for returning all copies of the Business Plan immediately upon
-      request of the Company. The information contained herein is: (i)
-      provided by the principal founders of the business and (ii)
-      publicly available from directories, publications and websites, as
-      mentioned in the body and the footnotes where possible or
-      appropriate. In some cases, non-publicly available information was
-      used, including independent research, studies or paid services
-      from individuals and organizations. While the information set
-      forth herein is deemed by the Company to be accurate, the Company
-      shall not be held liable for the accuracy of or any omissions from
-      this Business Plan or for any other written or oral communication
-      transmitted to the Recipient and any other party in the course of
-      its evaluation of transactions involving the Company.
-
-      The information contained in the plan will require careful
-      scrutiny, verification and due diligence efforts from the
-      Recipients of the plan. Any person or entity seeking to make an
-      investment in the business should not rely on the information set
-      forth in the plan as complete. In addition, the analyses contained
-      herein do not claim to be appraisals of the assets, or the
-      valuation of any entity. The business makes no guarantees
-      regarding any benefits received from investment, nor the legal,
-      tax or accounting effects of any transaction; and this Plan does
-      not constitute an offer to sell, or a solicitation of an offer to
-      buy securities. In furnishing the Business Plan, the Company
-      undertakes no obligation to provide Recipients of the Business
-      Plan with access to any additional information or to update this
-      Business Plan or to correct any inaccuracies that may be contained
-      herein. There exists substantial information with respect to the
-      business and its future prospects, and there are a substantial
-      number of risks associated with an investment in the business,
-      which are not set forth in the plan.
-
-      Furthermore, the potential fulfillment of `forward looking
-      statements' contained in the plan are subject to change due to
-      unexpected events, market shifts, or circumstances that cannot be
-      known at this time. Forward looking statements are based on
-      expectations, estimates and projections at the time the statements
-      were made that involve a number of economic, business, and
-      numerous risks and uncertainties which could cause actual results
-      or events to differ materially from those presently anticipated.
-      Forward looking statements in the plan may be identified through
-      the use of words such as, but not exclusively to: ``expects,''
-      ``will,'' ``anticipates,'' ``estimates,'' ``believes,'' or
-      statements indicating certain actions ``may,'' ``could,'' or
-      ``might'' occur. Such estimates and projections are subject to
-      significant uncertainties beyond the control of the Company.
-      Although such projections are believed to be realistic, no
-      representations are made as to their ultimate attainability.
-    \newpage
   
   % -----------------------------------------------
   % Table of Contents
@@ -448,19 +392,49 @@ Verkilo's prototype Formatter
 % ===============================================
 % Mainmatter
 \pagenumbering{arabic}\pagestyle{fancy}
-\begin{figure}[hbt!]
 \chapter{Executive Summary}
-\setstretch{1.55}
-Traditional publishing offers a professional workflow that helps authors turn their creations into publishable products. The publishing field is competitive, resulting in a high author-rejection rate. The self-publishing market comprises one-third of the US publishing market, representing \$9.1 billion of the \$26 billion in gross US annual book revenue.
 
-The quality of self-published titles is lower than traditional publishing due in part to a lack of professional editing, which, in turn, leads to a growing market of freelance editors. Authors and editors alike are challenged with finding a suitable counterpart who can work within their schedule. Editors are especially frustrated by authors with unrealistic expectations, which leads to lower quality-of-life and burnout in the editing community.
+Traditional publishing offers a professional workflow that helps authors
+turn their creations into publishable products. The publishing field is
+competitive, resulting in a high author-rejection rate. The
+self-publishing market comprises one-third of the US publishing market,
+representing \$9.1 billion of the \$26 billion in gross US annual book
+revenue.
 
-Verkilo seeks to streamline the self-published author workflow through a two-sided platform where authors create their work and are automatically paired with a suitable editor for final collaboration. This will reduce friction in the production process for the author, and by assisting with scheduling we will improve our editor’s quality of life. As a platform, we are like Airbnb and Uber. We generate revenue in two ways: by levying a service charge on author/editor transactions and by charging a monthly subscription to the authors. By establishing a modest foothold in the self-publishing industry by Year 5, we expect to generate \$4.5 million in revenue. Our ideal exit strategy is acquisition by Amazon.
+The quality of self-published titles is lower than traditional
+publishing due in part to a lack of professional editing, which, in
+turn, leads to a growing market of freelance editors. Authors and
+editors alike are challenged with finding a suitable counterpart who can
+work within their schedule. Editors are especially frustrated by authors
+with unrealistic expectations, which leads to lower quality-of-life and
+burnout in the editing community.
 
-No unified, two-sided platform exists in the publishing industry that offers automated author/editor pairing with content creation and automated formatting. Most content creation and editing occur in standalone products like Microsoft Word and Google Docs. Existing pairing platforms like Reedsy rely on manual pairing. Other products in the industry focus on niche aspects such as formatting.
+Verkilo seeks to streamline the self-published author workflow through a
+two-sided platform where authors create their work and are automatically
+paired with a suitable editor for final collaboration. This will reduce
+friction in the production process for the author, and by assisting with
+scheduling we will improve our editor's quality of life. As a platform,
+we are like Airbnb and Uber. We generate revenue in two ways: by levying
+a service charge on author/editor transactions and by charging a monthly
+subscription to the authors. By establishing a modest foothold in the
+self-publishing industry by Year 5, we expect to generate \$4.5 million
+in revenue. Our ideal exit strategy is acquisition by Amazon.
 
-We seek \$1.2 million in seed money for 20\% in equity so we can beat rivals to market and establish a strong brand presence. Verkilo will use seed funding to finance its first steps, including refined market research and product development. With seed funding, Verkilo can determine what its final products will be and who its target demographic is. We will use seed funding to employ a founding team to complete these tasks. We estimate the rate of return for this investment in Year 5 will be \$13.2 million.
-\end{figure}
+No unified, two-sided platform exists in the publishing industry that
+offers automated author/editor pairing with content creation and
+automated formatting. Most content creation and editing occur in
+standalone products like Microsoft Word and Google Docs. Existing
+pairing platforms like Reedsy rely on manual pairing. Other products in
+the industry focus on niche aspects such as formatting.
+
+We seek \$1.2 million in seed money for 20\% in equity so we can beat
+rivals to market and establish a strong brand presence. Verkilo will use
+seed funding to finance its first steps, including refined market
+research and product development. With seed funding, Verkilo can
+determine what its final products will be and who its target demographic
+is. We will use seed funding to employ a founding team to complete these
+tasks. We estimate the rate of return for this investment in Year 5 will
+be \$13.2 million.
 
 \hypertarget{value-proposition}{%
 \chapter{Value Proposition}\label{value-proposition}}
@@ -488,6 +462,8 @@ against each editorial transaction conducted by the respective editors.
 Verkilo will develop and market its own product offering that leverages
 the agility of cloud technology and dynamically enhanced through
 data-drive machine learning for speed to market.
+
+\newpage
 
 \hypertarget{business-problem}{%
 \section{Business Problem}\label{business-problem}}
@@ -545,8 +521,6 @@ without all the hassles. We create a collaborative platform where
 authors and editors can work anywhere, any time by offering a
 cross-device application (web, Windows, MacOS, iOS, Android, plugins).
 
-\newpage
-
 \hypertarget{validation}{%
 \section{Validation}\label{validation}}
 
@@ -594,6 +568,8 @@ assessment suggests none are competing against our vision of a complete
 vertical integration of software product offering for hassle-free
 self-publishing managed through machine learning
 
+\newpage
+
 \hypertarget{market-size}{%
 \section{Market Size}\label{market-size}}
 
@@ -606,41 +582,50 @@ at \$7.8 billion.
 Bowker, the US registrar for ISBNs (International Standard Book Number),
 reported 1.6 million books published by self-published authors in 2018,
 including 490,000 new self-published titles released in 2018 with an
-assigned ISBN. (\emph{News 2019 - Self-Publishing Grew 40 Percent in
-2018, New Report Reveals}, 2019) From 2010 to 2018, the number of
-self-published book titles increased an average of 30\% each year.
-(``Self-Publishing in the United States, 2013-2018 Print and Ebooks,''
-2019) As the overall US market publishing market grew at a slower pace,
-this increase represents a displacement of traditional publishing by
-self-publishers. Forbes reported there were three self-published books
-for every traditionally published book as of 2017. (Pofeldt, 2019)
-Eighty-five percent of self-published books with ISBNs from 2013 to
-2018---or 1.4 million titles---were distributed via Amazon's Kindle
-Direct Published Publishing (KDP), which replaced Amazon's CreateSpace.
+assigned ISBN.\footnote{Bowker warned many books in 2018 distributed via
+  Amazon's Kindle without ISBNs, which means the total number of
+  self-published books exceeds the Bowker reported number.
+  (``Self-Publishing in the United States, 2013-2018 Print and Ebooks,''
+  2019) We limited our analysis to verifiable numbers provided by
+  Bowker.} (\emph{Self-Publishing Grew 40 Percent in 2018, New Report
+Reveals}, 2019) From 2010 to 2018, the number of self-published book
+titles increased an average of 30\% each year. (``Self-Publishing in the
+United States, 2013-2018 Print and Ebooks,'' 2019) As the overall US
+market publishing market grew at a slower pace, this increase represents
+a displacement of traditional publishing by self-publishers. Forbes
+reported there were three self-published books for every traditionally
+published book as of 2017. (Pofeldt, 2019) Eighty-five percent of
+self-published books with ISBNs from 2013 to 2018---or 1.4 million
+titles---were distributed via Amazon's Kindle Direct Published
+Publishing (KDP), which replaced Amazon's CreateSpace.
 (``Self-Publishing in the United States, 2013-2018 Print and Ebooks,''
 2019)
 
-Bowker warned many books are now distributed via Amazon's Kindle and do
-not have ISBNs, which means the total number of self-published books
-exceeds the Bowker reported number. (``Self-Publishing in the United
-States, 2013-2018 Print and Ebooks,'' 2019) We limited our analysis to
-verifiable numbers provided by Bowker.
+\begin{figure}
+\centering
+\includegraphics{media/book-sales.eps}
+\caption{Self-Published Books with ISBNs 2013-2018}
+\end{figure}
 
 Technavio, a leading global technology research and advisory company,
 estimates the global publishing market size will grow by \$23 billion to
-\$142 billion between 2020-2024; a 19\% percent increase over the next
-four years or 6\% percent each year. (``Publishing Market by Platform
-and Geography - Forecast and Analysis 2020-2024,'' 2020) The US market
-should grow at a similar pace to \$33 billion. If self-publishing grows
-at the same rate, its market size may reach \$7.8 billion. If it grows
-at its 30\% percent historic rate, its 2024 revenue may reach \$27.9
-billion: 85\% of the total US publishing market. At 6\% percent annual
-growth from Bowker's 2018 numbers, we estimate a total of 3.8 million
-self-published books will be released between 2020 and 2025.
-(``Self-Publishing in the United States, 2013-2018 Print and Ebooks,''
-2019)
+\$142 billion between 2020-2024; a 19\% increase over the next four
+years or 6\% each year. (``Publishing Market by Platform and Geography -
+Forecast and Analysis 2020-2024,'' 2019) The US market should grow at a
+similar pace to \$33 billion. If US self-publishing grows at the same
+rate (instead of its historic 30\% rate), its market size may reach \$11
+billion by 2024. At 6\% annual growth from Bowker's 2018 numbers, we
+estimate a total of 3.8 million self-published books will be released
+between 2020 and 2025. (``Self-Publishing in the United States,
+2013-2018 Print and Ebooks,'' 2019)
 
-Figure 1: Forecasted Annual Growth of Self-Published Market 2020-2024
+\begin{figure}
+\centering
+\includegraphics{media/market-growth.eps}
+\caption{Forecasted Annual Growth of Self-Published Market 2020-2024}
+\end{figure}
+
+\newpage
 
 \hypertarget{market-landscape}{%
 \section{Market Landscape}\label{market-landscape}}
@@ -675,6 +660,8 @@ SaaS companies like Verkilo live and die by product differentiation,
 which creates fierce competitive rivalry as customers have comparably
 low switching costs. (Niebauer, 2018) We focus on competition in the
 following section due to our need to differentiate .
+
+\newpage
 
 \hypertarget{competition}{%
 \section{Competition}\label{competition}}
@@ -1070,8 +1057,6 @@ maintain customer relationships via the following:
   earn their trust. Allowing them to switch ensures we will strive to
   give them a product worthy of their use.
 \end{itemize}
-
-\newpage
 
 \hypertarget{traction-metrics}{%
 \section{Traction Metrics}\label{traction-metrics}}
@@ -1588,8 +1573,6 @@ delivering prototype programs is what drives him. Mr.~Koprowski's
 expertise aligns well with bringing innovation and speed to market for
 Verkilo.
 
-\newpage
-
 \hypertarget{benjamin-wilson-founder-ceo.}{%
 \subsubsection{Benjamin Wilson (Founder,
 CEO).}\label{benjamin-wilson-founder-ceo.}}
@@ -1645,8 +1628,6 @@ including our self-evaluation and approach to reducing risk. We leverage
 the approach recommended by Josh Smith, who created a risk-management
 process and spreadsheet from Mr.~Polovets' model. (Smith, 2017)
 
-\newpage
-
 \begin{longtable}[]{@{}lcl@{}}
 \caption{Summary of Business Risks}\tabularnewline
 \toprule
@@ -1670,16 +1651,73 @@ Mitigation\strut
 \midrule
 \endhead
 \begin{minipage}[t]{0.26\columnwidth}\raggedright
-Product/Market Fit Product Quality Sales Recruiting Short-Term
-Competition Long-Term Competition Intellectual Property Market Team
+Product/Market Fit\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Very High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Prototype with early adopters\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Product Quality\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Very High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Prototype with early adopters\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Sales\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Very High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Seek sales/marketing advisor or co-founder\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Recruiting\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Seek recruiting advisor or co-founder\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Short-Term Competition\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Brand promotion, patent\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Long-Term Competition\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Brand promotion\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Intellectual Property\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+High\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Trademark brand; hire patent attorney\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Market\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Low\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Conduct bottom-up analysis of market\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+Team\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Low\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+None, minimal risk\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
 Funding\strut
 \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
-Very High Very High Very High High High High High Low Low Low\strut
+Low\strut
 \end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
-Prototype with early adopters Prototype with early adopters Seek
-sales/marketing advisor or co-founder Seek recruiting advisor or
-co-founder Brand promotion, patent Brand promotion Trademark brand; hire
-patent attorney Conduct bottom-up analysis of market None, minimal risk
 Seeking seed funding\strut
 \end{minipage}\tabularnewline
 \bottomrule
@@ -1781,6 +1819,8 @@ Risk---High}\label{long-term-competition-riskhigh}}
   Mitigation: With sales in place, establish brand perception.
 \end{itemize}
 
+\newpage
+
 \hypertarget{intellectual-property-riskhigh}{%
 \subsubsection{Intellectual Property
 Risk---High}\label{intellectual-property-riskhigh}}
@@ -1812,8 +1852,6 @@ Risk---High}\label{intellectual-property-riskhigh}}
   Mitigation: We will continue to improve our model via bottom-up
   analysis and experimentation.
 \end{itemize}
-
-\newpage
 
 \hypertarget{team-risklow}{%
 \subsubsection{Team Risk---Low}\label{team-risklow}}
@@ -1928,8 +1966,6 @@ Scale, pending early exit opportunity.\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
-
-\newpage
 
 \hypertarget{use-of-proceeds-and-funds}{%
 \section{Use of Proceeds and Funds}\label{use-of-proceeds-and-funds}}
@@ -2093,6 +2129,8 @@ Total:\strut
 \bottomrule
 \end{longtable}
 
+\newpage{}
+
 \hypertarget{marketing-expenses}{%
 \subsubsection{Marketing Expenses}\label{marketing-expenses}}
 
@@ -2150,8 +2188,6 @@ Total:\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
-
-\newpage
 
 \hypertarget{operations-expenses}{%
 \subsubsection{Operations Expenses}\label{operations-expenses}}
@@ -2505,6 +2541,8 @@ Assumptions}\label{service-fee-estimate-assumptions}}
   assumed probability reflected in the estimate.
 \end{itemize}
 
+\newpage{}
+
 \hypertarget{revenue-estimates-1}{%
 \subsubsection{Revenue Estimates}\label{revenue-estimates-1}}
 
@@ -2802,6 +2840,7 @@ Social Media\strut
 
 \begin{landscape}
   \section{Income Statement \& Balance Sheet}
+  \small
   \setstretch{0.9}
   \begin{center}
     \begin{longtable}[]{@{}lrrrrr@{}}
@@ -3001,7 +3040,7 @@ When the author wants to submit the manuscript to an editor\strut
 \bottomrule
 \end{longtable}
 
-\newpage
+\newpage{}
 
 \hypertarget{bibliography}{%
 \section*{Bibliography}\label{bibliography}}
@@ -3015,7 +3054,7 @@ When the author wants to submit the manuscript to an editor\strut
 
 \leavevmode\hypertarget{ref-noauthor_ibisworld_nodate}{}%
 \emph{Global Book Publishing Industry Outlook}. (2019).
-\url{https://www.ibisworld.com/default.aspx}
+\url{https://www.ibisworld.com/global/market-research-reports/global-book-publishing-industry/}
 
 \leavevmode\hypertarget{ref-hagel_power_2015}{}%
 Hagel, J. (2015). The power of platforms. \emph{Part of the Business
@@ -3028,11 +3067,6 @@ Magic Quadrant Research Methodology. (2020). In \emph{Gartner}.
 \leavevmode\hypertarget{ref-noauthor_national_nodate}{}%
 \emph{National Novel Writing Month}. (2020).
 \url{http://archive.nanowrimo.org/regions}
-
-\leavevmode\hypertarget{ref-bowker_news_nodate}{}%
-\emph{News 2019 - Self-Publishing Grew 40 Percent in 2018, New Report
-Reveals}. (2019).
-\url{http://www.bowker.com/news/2019/Self-Publishing-Grew-40-Percent-in-2018-New-Report--Reveals.html}
 
 \leavevmode\hypertarget{ref-annelise_porters_nodate}{}%
 Niebauer, A. (2018). \emph{Porter's 5 Competitive Forces for SaaS in 5
@@ -3054,7 +3088,7 @@ Polovets, L. (2016b). \emph{Startups are Risk Bundles}.
 
 \leavevmode\hypertarget{ref-technavio_publishing_nodate}{}%
 Publishing Market by Platform and Geography - Forecast and Analysis
-2020-2024. (2020). In \emph{Technavio}.
+2020-2024. (2019). In \emph{Technavio}.
 \url{https://www.technavio.com/report/publishing-market-size-industry-analysis}
 
 \leavevmode\hypertarget{ref-santos_dating_2020}{}%
@@ -3066,9 +3100,15 @@ Santos, M. (2020). Dating Algorithms using Machine Learning and AI. In
 \emph{Self Published Writers}. (n.d.). Retrieved April 9, 2020, from
 \url{https://www.reddit.com/r/selfpublish/}
 
+\leavevmode\hypertarget{ref-bowker_news_nodate}{}%
+\emph{Self-Publishing Grew 40 Percent in 2018, New Report Reveals}.
+(2019).
+\url{http://www.bowker.com/news/2019/Self-Publishing-Grew-40-Percent-in-2018-New-Report--Reveals.html}
+
 \leavevmode\hypertarget{ref-bowker_self-publishing_2019}{}%
 Self-Publishing in the United States, 2013-2018 Print and Ebooks.
 (2019). \emph{Bowker}.
+\url{https://media2.proquest.com/documents/bowker-selfpublishing-report2019.pdf}
 
 \leavevmode\hypertarget{ref-sequoia_two-sided_2018}{}%
 Sequoia. (2018). Two-Sided Marketplaces and Engagement. In

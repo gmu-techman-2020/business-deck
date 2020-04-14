@@ -1,3 +1,4 @@
+\newpage{}
 ## Revenue Estimates
 
 Verkilo will build revenues and profits from the following sources:
@@ -9,6 +10,7 @@ Verkilo will build revenues and profits from the following sources:
 
 - **User Subscription.** Verkilo charges a nominal monthly user
     subscription fee. The subscription drives metrics collection.
+
 
 Table: Weighted Editor Pricing
 
@@ -64,9 +66,9 @@ Table: Five-Year Sales Forecast
 ---------------------------------------------------------------------------------------------------
                                     Year 1        Year 2        Year 3        Year 4         Year 5
 ----------------------------  ------------  ------------  ------------  ------------  -------------
-Subscribers Sold                    20,400        59,800       102,450       184,000        330,500
+Subscriptions Sold                  20,400        59,800       102,450       184,000        330,500
 
-Subscriber Sales                  $142,850      $418,400      $720,000    $1,288,000     $2,300,000
+Subscription Sales                $142,850      $418,400      $720,000    $1,288,000     $2,300,000
 
 Edits Sold                             380         1,200         2,560         5,520          9,910
 
